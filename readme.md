@@ -22,4 +22,4 @@ babel
 less
 typescript -->
 
-<img src="https://raw.githubusercontent.com/kah3vich/Gulp-RS/d55495dd8f74fe31123e86e1e0078b379d4aafa4/logo.svg">
+<img src="https://raw.githubusercontent.com/kah3vich/Gulp-RS/8df5831bb9f2fe1150eeb16daa30ae580e71dbe0/logo.svg">
