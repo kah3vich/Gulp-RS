@@ -1,0 +1,359 @@
+@font-face {
+	font-family : B612;
+	font-display : swap;
+	src : url("../fonts/B612-Bold.woff") format("woff");
+	font-weight : 700;
+	font-style : normal;
+}
+
+@font-face {
+	font-family : B612;
+	font-display : swap;
+	src : url("../fonts/B612-Regular.woff") format("woff");
+	font-weight : 400;
+	font-style : normal;
+}
+
+@font-face {
+	font-family : B612;
+	font-display : swap;
+	src : url("../fonts/B612-Italic.woff") format("woff");
+	font-weight : 400;
+	font-style : italic;
+}
+
+@font-face {
+	font-family : B612;
+	font-display : swap;
+	src : url("../fonts/B612-BoldItalic.woff") format("woff");
+	font-weight : 700;
+	font-style : italic;
+}
+
+*
+,
+*::before
+,
+*::after {
+	-webkit-box-sizing : border-box;
+	        box-sizing : border-box;
+	padding : 0;
+	margin : 0;
+	        box-sizing : border-box;
+	-webkit-user-select : none;
+	   -moz-user-select : none;
+	    -ms-user-select : none;
+	        user-select : none;
+}
+
+body {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	width : 100%;
+	height : 100vh;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	background-color : #1e4029;
+	overflow : hidden;
+	position : relative;
+	font-family : "B612";
+}
+
+a {
+	text-decoration : none;
+}
+
+ul {
+	list-style : none;
+}
+
+input {
+	padding : 0;
+	margin : 0;
+	border : 0;
+	border : none;
+}
+
+button {
+	padding : 0;
+	border : none;
+	cursor : pointer;
+}
+
+.containers {
+	max-width : 1440px;
+	padding : 0 165px;
+	margin : 0 auto;
+	width : 100%;
+}
+
+ol
+,
+ul {
+	padding-left : 0;
+}
+
+dl
+,
+ol
+,
+ul {
+	margin-top : 0;
+	margin-bottom : 0;
+}
+
+p {
+	margin-top : 0;
+	margin-bottom : 0;
+}
+
+.h1
+,
+.h2
+,
+.h3
+,
+.h4
+,
+.h5
+,
+.h6
+,
+h1
+,
+h2
+,
+h3
+,
+h4
+,
+h5
+,
+h6 {
+	margin-top : 0;
+	margin-bottom : 0;
+}
+
+.display-n {
+	display : none !important;
+}
+
+.logo {
+	width : 450px;
+	height : 450px;
+	-webkit-animation : rotate 10s infinite linear;
+	        animation : rotate 10s infinite linear;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	position : relative;
+	z-index : 5;
+	cursor : pointer;
+}
+
+.logo svg {
+	width : 450px;
+	height : 450px;
+	fill : #d5a54e;
+}
+
+.gulp {
+	position : absolute;
+	top : 50%;
+	left : 50%;
+	-webkit-transform : translate(-50%, -50%);
+	    -ms-transform : translate(-50%, -50%);
+	        transform : translate(-50%, -50%);
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+}
+
+.gulp img {
+	width : 200px;
+	height : 100px;
+}
+
+.gulp svg {
+	width : 200px;
+	height : 100px;
+	fill : #d5a54e;
+}
+
+.gulp svg g {
+	fill : #d5a54e;
+	stroke : #d5a54e;
+}
+
+.header__list {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : end;
+	-ms-flex-pack : end;
+	justify-content : flex-end;
+	position : absolute;
+	left : 20px;
+	bottom : 30px;
+}
+
+.header__list-item {
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	background-color : transparent;
+	border : 1px solid rgba(213, 165, 78, 0.2);
+	cursor : pointer;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	height : 40px;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	-webkit-transition : 0.4s ease;
+	     -o-transition : 0.4s ease;
+	        transition : 0.4s ease;
+	width : 40px;
+	color : #d5a54e;
+	position : relative;
+	margin : 12px 0 0 0;
+}
+
+.header__list-item:hover {
+	background : #d5a54e;
+	-webkit-transition : 0.4s ease;
+	     -o-transition : 0.4s ease;
+	        transition : 0.4s ease;
+	color : #000000;
+}
+
+.header__list-item:hover.header__list-item p {
+	opacity : 1;
+	-webkit-transition : all 0.5 ease;
+	     -o-transition : all 0.5 ease;
+	        transition : all 0.5 ease;
+}
+
+.header__list-item p {
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	opacity : 0;
+	position : absolute;
+	top : 55%;
+	-webkit-transform : translate(0%, -55%);
+	    -ms-transform : translate(0%, -55%);
+	        transform : translate(0%, -55%);
+	font-weight : 500;
+	min-width : 150px;
+	width : 100%;
+	right : -160px;
+	color : #000000;
+}
+
+.header__version {
+	position : absolute;
+	right : 30px;
+	bottom : 30px;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	font-weight : 500;
+	color : #d5a54e;
+	cursor : pointer;
+}
+
+.header__version:hover {
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	color : #ffa600;
+}
+
+.header__version a {
+	color : #d5a54e;
+}
+
+@-webkit-keyframes rotate {
+	0% {
+		-webkit-transform : rotate(0);
+		        transform : rotate(0);
+	}
+
+	25% {
+		-webkit-transform : rotate(90deg);
+		        transform : rotate(90deg);
+	}
+
+	50% {
+		-webkit-transform : rotate(180deg);
+		        transform : rotate(180deg);
+	}
+
+	75% {
+		-webkit-transform : rotate(270deg);
+		        transform : rotate(270deg);
+	}
+
+	100% {
+		-webkit-transform : rotate(360deg);
+		        transform : rotate(360deg);
+	}
+}
+
+@keyframes rotate {
+	0% {
+		-webkit-transform : rotate(0);
+		        transform : rotate(0);
+	}
+
+	25% {
+		-webkit-transform : rotate(90deg);
+		        transform : rotate(90deg);
+	}
+
+	50% {
+		-webkit-transform : rotate(180deg);
+		        transform : rotate(180deg);
+	}
+
+	75% {
+		-webkit-transform : rotate(270deg);
+		        transform : rotate(270deg);
+	}
+
+	100% {
+		-webkit-transform : rotate(360deg);
+		        transform : rotate(360deg);
+	}
+}
+
+@media (max-width: 550px) {
+	.logo {
+		width : 350px;
+		height : 350px;
+	}
+
+	.logo svg {
+		width : 350px;
+		height : 350px;
+	}
+
+	.gulp svg {
+		width : 150px;
+		height : 75px;
+	}
+}

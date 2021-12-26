@@ -1,0 +1,5 @@
+gulpfile.js
+src/js/app.js
+webpack.config.js
+babel.config.js
+gulp/**/*.js

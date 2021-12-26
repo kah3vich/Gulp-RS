@@ -1,0 +1,14 @@
+@media (max-width: 550px) {
+    .logo {
+        width: 350px;
+        height: 350px;
+        & svg {
+            width: 350px;
+            height: 350px;
+        }
+    }
+    .gulp svg {
+        width: 150px;
+        height: 75px;
+    }
+}
