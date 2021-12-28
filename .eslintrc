@@ -17,5 +17,8 @@
         "indent": ["error", 4, { "ignoredNodes": ["ConditionalExpression"]}],
         "no-console": 0,
         "no-use-before-define": ["error", { "functions": true, "classes": true, "variables": true }],
+        "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+        "no-unused-vars": "disable",
+        "no-plusplus": "disable",
     },
 }

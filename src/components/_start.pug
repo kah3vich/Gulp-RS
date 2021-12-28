@@ -1,7 +1,8 @@
 .logo#active 
-    img(src="@img/logos.svg", alt="logos")
+    svg.img 
+        use(xlink:href="./svg/sprite.svg#logos")
 .gulp#gulp 
-    img(src="@img/gulp.svg", alt="gulp")
+    img(src="./svg/sprite.svg#gulp")
 ul.header__list 
     li 
         a(href="https://github.com/gulp-community/gulp-pug" target="_blank").header__list-item P
