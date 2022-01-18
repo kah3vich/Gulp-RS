@@ -66,6 +66,7 @@
 		"node-sass": "^6.0.1",
 		"path": "^0.12.7",
 		"sass": "^1.45.1",
+		"uglifyjs-webpack-plugin": "^2.2.0",
 		"webp-converter": "2.2.3",
 		"webpack": "^5.65.0",
 		"webpack-stream": "^7.0.0"

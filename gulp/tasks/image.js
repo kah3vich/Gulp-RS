@@ -27,8 +27,6 @@ export const image = () => {
 			})
 		)
 		.pipe(app.gulp.dest(app.path.build.image))
-		.pipe(app.gulp.src(app.path.src.svg))
-		.pipe(app.gulp.dest(app.path.build.image))
 		.pipe(size())
 		.pipe(app.plugins.browsersync.stream());
 };
