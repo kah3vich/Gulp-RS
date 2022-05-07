@@ -15,13 +15,13 @@ export const path = {
 	},
 	src: {
 		js: `${srcFolder}/js/app.js`,
-		image: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,ico}`,
+		image: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,ico,mp4}`,
 		svg: `${srcFolder}/svg/**/*.svg`,
 		scss: `${srcFolder}/scss/style.scss`,
 		html: `${srcFolder}/*.pug`,
 	},
 	watch: {
-		image: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,svg,ico}`,
+		image: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,svg,ico,mp4}`,
 		js: `${srcFolder}/js/**/*.js`,
 		scss: `${srcFolder}/scss/**/*.scss`,
 		html: `${srcFolder}/**/*.pug`,
