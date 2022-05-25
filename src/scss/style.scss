@@ -40,19 +40,14 @@ ul {
 input {
 	padding: 0;
 	margin: 0;
-	border: 0;
 	border: none;
+	outline: none;
 }
 button {
 	padding: 0;
 	border: none;
 	cursor: pointer;
-}
-.containers {
-	max-width: 1440px;
-	padding: 0 165px;
-	margin: 0 auto;
-	width: 100%;
+	outline: none;
 }
 ol,
 ul {
@@ -83,8 +78,18 @@ h6 {
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
+.containers {
+	max-width: 1440px;
+	padding: 0 165px;
+	margin: 0 auto;
+	width: 100%;
+}
 .display-n {
 	display: none !important;
+}
+opacity-h {
+	opacity: 0 !important;
 }
 
 //! --------------------------------------------------------------------
