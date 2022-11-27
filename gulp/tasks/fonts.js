@@ -1,8 +1,32 @@
-import fs from "fs";
-import fonter from "gulp-fonter";
-import flatten from "gulp-flatten";
 import chalk from "chalk";
+import fs from "fs";
+import flatten from "gulp-flatten";
+import fonter from "gulp-fonter";
 import ttf2woff2 from "gulp-ttf2woff2";
+
+// var fs = require('');
+// var gulp = require('gulp');
+// var progress = require('progress-stream');
+
+// var filePath = './src/fonts/';
+// var fileSize = fs.statSync(filePath).size;
+
+// var progressStream = progress({
+//   length: fileSize,
+//   time: 10,
+//   objectMode: true
+// });
+
+// let counter = 0
+
+// progressStream.on('progress', function (stats) {
+//   console.log(Math.round(stats.percentage) + '%');
+//   fs.readdir('./src/fonts/Inter', (err, files) => {
+// 	// files.forEach(file => {
+// 	  console.log(files[0]);
+// 	// });
+//   });
+// });
 
 export const otfToTtf = () => {
 	return app.gulp
@@ -25,7 +49,8 @@ export const otfToTtf = () => {
 
 export const ttfToWoff = () => {
 	return app.gulp
-		.src(`${app.path.srcFolder}/fonts/**/*.ttf`, {})
+		.src(`${app.path.srcFolder}/fonts/**/*.ttf`, { dot: true })
+		
 		.pipe(
 			app.plugins.plumber(
 				app.plugins.notify.onError({
@@ -34,15 +59,20 @@ export const ttfToWoff = () => {
 				})
 			)
 		)
+		// .pipe(progressStream)
 		.pipe(
 			fonter({
 				formats: ["woff"],
+				
 			})
 		)
+
 		.pipe(flatten())
 		.pipe(app.gulp.dest(`${app.path.build.fonts}`))
 		.pipe(app.gulp.src(`${app.path.srcFolder}/fonts/**/*.ttf`))
+		// .pipe(progressStream)
 		.pipe(ttf2woff2())
+
 		.pipe(flatten())
 		.pipe(app.gulp.dest(`${app.path.build.fonts}`));
 };
@@ -52,10 +82,12 @@ export const fontsStyle = () => {
 	fs.readdir(app.path.build.fonts, function (err, fonstFiles) {
 		if (fonstFiles) {
 			if (!fs.existsSync(fonstFile)) {
-				fs.writeFile(fonstFile, "", cd);
+				fs.writeFile(fonstFile, "", emptyFunction);
 				let newFileOnly;
 				for (var i = 0; i < fonstFiles.length; i++) {
 					let fontFileName = fonstFiles[i].split(".")[0];
+					console.log('fontFileName    ', fontFileName)
+					
 					if (newFileOnly !== fontFileName) {
 						let fontName = fontFileName.split("-")[0]
 							? fontFileName.split("-")[0]
@@ -166,7 +198,7 @@ export const fontsStyle = () => {
 						fs.appendFile(
 							fonstFile,
 							`@font-face { \n\tfont-family: ${fontName}; \n\tfont-display: swap; \n\tsrc: url("../fonts/${fontFileName}.woff") format("woff"), url("../fonts/${fontFileName}.woff2") format("woff2"); \n\tfont-weight: ${fontWight}; \n\tfont-style: ${fontStyle}; \n}\r\n`,
-							cd
+							emptyFunction
 						);
 						newFileOnly = fontFileName;
 					}
@@ -181,5 +213,5 @@ export const fontsStyle = () => {
 		}
 	});
 	return app.gulp.src(`${app.path.srcFolder}`);
-	function cd() {}
+	function emptyFunction() {}
 };

@@ -1,7 +1,8 @@
 import fileInclude from "gulp-file-include";
-import webpHtmlNosvg from "gulp-webp-html-nosvg";
-import versionNumber from "gulp-version-number";
+import flatten from "gulp-flatten";
 import pug from "gulp-pug";
+import versionNumber from "gulp-version-number";
+import webpHtmlNosvg from "gulp-webp-html-nosvg";
 
 export const html = () => {
 	return app.gulp
@@ -39,5 +40,7 @@ export const html = () => {
 			)
 		)
 		.pipe(app.gulp.dest(app.path.build.html))
+		.pipe(flatten())
+		.pipe(app.gulp.dest(`${app.path.build.html}`))
 		.pipe(app.plugins.browsersync.stream());
 };

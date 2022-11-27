@@ -36,6 +36,8 @@
 		"gulp-babel": "^8.0.0",
 		"gulp-clean-css": "^4.3.0",
 		"gulp-csscomb": "^3.1.0",
+		"gulp-debug": "^4.0.0",
+		"gulp-favicons": "^3.0.0",
 		"gulp-file-include": "^2.3.0",
 		"gulp-filesize": "0.0.6",
 		"gulp-flatten": "^0.4.0",
@@ -62,15 +64,14 @@
 		"gulp-webp-html-nosvg": "^1.0.1",
 		"gulp-webpcss": "^1.1.1",
 		"gulp-zip": "^5.1.0",
-		"jquery": "^3.6.0",
-		"node-sass": "^6.0.1",
 		"path": "^0.12.7",
 		"prettier": "^2.6.2",
 		"sass": "^1.45.1",
-		"uglifyjs-webpack-plugin": "^2.2.0",
 		"webp-converter": "2.2.3",
 		"webpack": "^5.65.0",
 		"webpack-stream": "^7.0.0"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"progress-stream": "^2.0.0"
+	}
 }

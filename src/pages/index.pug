@@ -1,0 +1,11 @@
+extends ../layouts/default
+
+block variables
+	- const title = "New Page";
+
+block content
+	include ../layouts/header
+	include ../layouts/footer
+
+block scripts
+	script(src="js/main.js")
