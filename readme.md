@@ -9,6 +9,6 @@
 7. optimization code gulp 
 8. link cdn 
 9. svg sprite
-10. added license 
+10. added license - ready
 11. added base readme file 
-12. added github - active pages
+12. added github - active pages - ready
