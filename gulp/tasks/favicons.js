@@ -10,10 +10,10 @@ export const favicon = () => {
                 favicons: true,
                 online: false,
                 appleStartup: false,
-                android: false,
+                android: true,
                 firefox: false,
-                yandex: false,
-                windows: false,
+                yandex: true,
+                windows: true,
                 coast: false
             }
         }))

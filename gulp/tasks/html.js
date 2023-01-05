@@ -1,8 +1,8 @@
-import fileInclude from "gulp-file-include";
+// import fileInclude from "gulp-file-include";
 import flatten from "gulp-flatten";
 import pug from "gulp-pug";
 import versionNumber from "gulp-version-number";
-import webpHtmlNosvg from "gulp-webp-html-nosvg";
+// import webpHtmlNosvg from "gulp-webp-html-nosvg";
 
 export const html = () => {
 	return app.gulp
@@ -15,14 +15,14 @@ export const html = () => {
 				})
 			)
 		)
-		.pipe(fileInclude())
+		// .pipe(fileInclude())
 		.pipe(
 			pug({
 				pretty: true,
 			})
 		)
-		.pipe(app.plugins.replace(/@img\//g, "./img/"))
-		.pipe(app.plugins.if(app.isBuild, webpHtmlNosvg()))
+		.pipe(app.plugins.replace(/(\.\.\/){1,}/g, "./"))
+		// .pipe(app.plugins.if(app.isBuild, webpHtmlNosvg()))
 		.pipe(
 			app.plugins.if(
 				app.isBuild,
@@ -36,11 +36,12 @@ export const html = () => {
 					output: {
 						file: "./version.json",
 					},
+					
 				})
 			)
 		)
 		.pipe(app.gulp.dest(app.path.build.html))
 		.pipe(flatten())
-		.pipe(app.gulp.dest(`${app.path.build.html}`))
+		.pipe(app.gulp.dest(app.path.build.html))
 		.pipe(app.plugins.browsersync.stream());
 };

@@ -5,7 +5,17 @@ block variables
 
 block content
 	include ../layouts/header
+
+	
+	<svg class="social__icon">
+		<use xlink:href="./svg/sprite.svg#gulp"></use>
+	</svg>
+	img(src="../img/icon.png")
+
 	include ../layouts/footer
+
+block modal
+	.modal
 
 block scripts
 	script(src="js/main.js")

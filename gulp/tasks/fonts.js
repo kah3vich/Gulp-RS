@@ -1,4 +1,3 @@
-import chalk from "chalk";
 import fs from "fs";
 import flatten from "gulp-flatten";
 import fonter from "gulp-fonter";
@@ -68,13 +67,12 @@ export const ttfToWoff = () => {
 		)
 
 		.pipe(flatten())
-		.pipe(app.gulp.dest(`${app.path.build.fonts}`))
+		.pipe(app.gulp.dest(app.path.build.fonts))
 		.pipe(app.gulp.src(`${app.path.srcFolder}/fonts/**/*.ttf`))
 		// .pipe(progressStream)
-		.pipe(ttf2woff2())
-
+		.pipe(app.plugins.if(app.isBuild, ttf2woff2()))
 		.pipe(flatten())
-		.pipe(app.gulp.dest(`${app.path.build.fonts}`));
+		.pipe(app.gulp.dest(app.path.build.fonts));
 };
 
 export const fontsStyle = () => {
@@ -86,7 +84,6 @@ export const fontsStyle = () => {
 				let newFileOnly;
 				for (var i = 0; i < fonstFiles.length; i++) {
 					let fontFileName = fonstFiles[i].split(".")[0];
-					console.log('fontFileName    ', fontFileName)
 					
 					if (newFileOnly !== fontFileName) {
 						let fontName = fontFileName.split("-")[0]
@@ -203,12 +200,6 @@ export const fontsStyle = () => {
 						newFileOnly = fontFileName;
 					}
 				}
-			} else {
-				console.log(
-					chalk.yellow(
-						"File fonts.scss has already been created, to update it - delete it and run the build again."
-					)
-				);
 			}
 		}
 	});

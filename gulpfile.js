@@ -21,7 +21,7 @@ import { server } from './gulp/tasks/server.js'
 import { svg } from './gulp/tasks/svg.js'
 import { zip } from './gulp/tasks/zip.js'
 
-function watcher() {
+const watcher = () => {
 	gulp.watch(path.watch.html, html)
 	gulp.watch(path.watch.scss, scss)
 	gulp.watch(path.watch.js, js)

@@ -1,6 +1,6 @@
-import webp from "gulp-webp";
-import imagemin from "gulp-imagemin";
+// import webp from "gulp-webp";
 import size from "gulp-filesize";
+import imagemin from "gulp-imagemin";
 
 export const image = () => {
 	return app.gulp
@@ -14,7 +14,7 @@ export const image = () => {
 			)
 		)
 		.pipe(app.plugins.newer(app.path.build.image))
-		.pipe(app.plugins.if(app.isBuild, webp()))
+		// .pipe(app.plugins.if(app.isBuild, webp()))
 		.pipe(app.plugins.if(app.isBuild, app.gulp.dest(app.path.build.image)))
 		.pipe(app.plugins.if(app.isBuild, app.gulp.src(app.path.src.image)))
 		.pipe(app.plugins.if(app.isBuild, app.plugins.newer(app.path.build.image)))

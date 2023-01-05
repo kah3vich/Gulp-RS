@@ -1,12 +1,12 @@
-import defSass from "sass";
-import gulpSass from "gulp-sass";
-import rename from "gulp-rename";
-import csscomb from "gulp-csscomb";
-import cleanCss from "gulp-clean-css";
-import webpcss from "gulp-webpcss";
 import autoprefixer from "gulp-autoprefixer";
+import cleanCss from "gulp-clean-css";
+import csscomb from "gulp-csscomb";
 import groupCssMediaQueries from "gulp-group-css-media-queries";
+import rename from "gulp-rename";
+import gulpSass from "gulp-sass";
 import sourcemaps from "gulp-sourcemaps";
+// import webpcss from "gulp-webpcss";
+import defSass from "sass";
 
 const sass = gulpSass(defSass);
 
@@ -22,32 +22,22 @@ export const scss = () => {
 			)
 		)
 		.pipe(sourcemaps.init())
-		.pipe(app.plugins.replace(/@img\//g, "./../img/"))
+		.pipe(app.plugins.replace(/(\.\.\/){1,}/g, "./../"))
 		.pipe(
 			sass({
 				outputStyle: "expanded",
 			})
 		)
 		.pipe(app.plugins.if(app.isBuild, groupCssMediaQueries()))
-		.pipe(
-			app.plugins.if(
-				app.isBuild,
-				webpcss({
-					webpClass: ".webp",
-					noWebpClass: ".no-webp",
-				})
-			)
-		)
-		.pipe(
-			app.plugins.if(
-				app.isBuild,
-				autoprefixer({
-					grid: true,
-					overrideBrowserslist: ["last 3 version"],
-					cascade: true,
-				})
-			)
-		)
+		// .pipe(
+		// 	app.plugins.if(
+		// 		app.isBuild,
+		// 		webpcss({
+		// 			webpClass: ".webp",
+		// 			noWebpClass: ".no-webp",
+		// 		})
+		// 	)
+		// )
 		.pipe(
 			app.plugins.if(
 				app.isBuild,
