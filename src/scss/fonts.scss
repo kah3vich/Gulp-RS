@@ -2,9 +2,9 @@
     font-family: Inter;
     font-display: swap;
     src:
-        url("../fonts/Inter-ExtraBold.woff") format("woff"),
-        url("../fonts/Inter-ExtraBold.woff2") format("woff2");
-    font-weight: 800;
+        url("../fonts/Inter-Black.woff") format("woff"),
+        url("../fonts/Inter-Black.woff2") format("woff2");
+    font-weight: 900;
     font-style: normal;
 }
 
@@ -22,19 +22,9 @@
     font-family: Inter;
     font-display: swap;
     src:
-        url("../fonts/Inter-Black.woff") format("woff"),
-        url("../fonts/Inter-Black.woff2") format("woff2");
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Inter;
-    font-display: swap;
-    src:
-        url("../fonts/Inter-ExtraLight.woff") format("woff"),
-        url("../fonts/Inter-ExtraLight.woff2") format("woff2");
-    font-weight: 200;
+        url("../fonts/Inter-ExtraBold.woff") format("woff"),
+        url("../fonts/Inter-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
     font-style: normal;
 }
 
@@ -52,9 +42,9 @@
     font-family: Inter;
     font-display: swap;
     src:
-        url("../fonts/Inter-SemiBold.woff") format("woff"),
-        url("../fonts/Inter-SemiBold.woff2") format("woff2");
-    font-weight: 600;
+        url("../fonts/Inter-ExtraLight.woff") format("woff"),
+        url("../fonts/Inter-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
     font-style: normal;
 }
 
@@ -82,29 +72,9 @@
     font-family: Inter;
     font-display: swap;
     src:
-        url("../fonts/Inter-Thin.woff") format("woff"),
-        url("../fonts/Inter-Thin.woff2") format("woff2");
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: NunitoSans;
-    font-display: swap;
-    src:
-        url("../fonts/NunitoSans-BlackItalic.woff") format("woff"),
-        url("../fonts/NunitoSans-BlackItalic.woff2") format("woff2");
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: NunitoSans;
-    font-display: swap;
-    src:
-        url("../fonts/NunitoSans-Bold.woff") format("woff"),
-        url("../fonts/NunitoSans-Bold.woff2") format("woff2");
-    font-weight: 700;
+        url("../fonts/Inter-SemiBold.woff") format("woff"),
+        url("../fonts/Inter-SemiBold.woff2") format("woff2");
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -122,10 +92,10 @@
     font-family: NunitoSans;
     font-display: swap;
     src:
-        url("../fonts/NunitoSans-ExtraBold.woff") format("woff"),
-        url("../fonts/NunitoSans-ExtraBold.woff2") format("woff2");
-    font-weight: 800;
-    font-style: normal;
+        url("../fonts/NunitoSans-BlackItalic.woff") format("woff"),
+        url("../fonts/NunitoSans-BlackItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
 }
 
 @font-face {
@@ -139,22 +109,12 @@
 }
 
 @font-face {
-    font-family: NunitoSans;
+    font-family: Inter;
     font-display: swap;
     src:
-        url("../fonts/NunitoSans-ExtraLightItalic.woff") format("woff"),
-        url("../fonts/NunitoSans-ExtraLightItalic.woff2") format("woff2");
-    font-weight: 200;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: NunitoSans;
-    font-display: swap;
-    src:
-        url("../fonts/NunitoSans-Light.woff") format("woff"),
-        url("../fonts/NunitoSans-Light.woff2") format("woff2");
-    font-weight: 300;
+        url("../fonts/Inter-Thin.woff") format("woff"),
+        url("../fonts/Inter-Thin.woff2") format("woff2");
+    font-weight: 100;
     font-style: normal;
 }
 
@@ -162,19 +122,19 @@
     font-family: NunitoSans;
     font-display: swap;
     src:
-        url("../fonts/NunitoSans-Italic.woff") format("woff"),
-        url("../fonts/NunitoSans-Italic.woff2") format("woff2");
-    font-weight: 400;
-    font-style: italic;
+        url("../fonts/NunitoSans-ExtraBold.woff") format("woff"),
+        url("../fonts/NunitoSans-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
 }
 
 @font-face {
     font-family: NunitoSans;
     font-display: swap;
     src:
-        url("../fonts/NunitoSans-LightItalic.woff") format("woff"),
-        url("../fonts/NunitoSans-LightItalic.woff2") format("woff2");
-    font-weight: 300;
+        url("../fonts/NunitoSans-ExtraLightItalic.woff") format("woff"),
+        url("../fonts/NunitoSans-ExtraLightItalic.woff2") format("woff2");
+    font-weight: 200;
     font-style: italic;
 }
 
@@ -202,10 +162,30 @@
     font-family: NunitoSans;
     font-display: swap;
     src:
-        url("../fonts/NunitoSans-SemiBold.woff") format("woff"),
-        url("../fonts/NunitoSans-SemiBold.woff2") format("woff2");
-    font-weight: 600;
+        url("../fonts/NunitoSans-Light.woff") format("woff"),
+        url("../fonts/NunitoSans-Light.woff2") format("woff2");
+    font-weight: 300;
     font-style: normal;
+}
+
+@font-face {
+    font-family: NunitoSans;
+    font-display: swap;
+    src:
+        url("../fonts/NunitoSans-LightItalic.woff") format("woff"),
+        url("../fonts/NunitoSans-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: NunitoSans;
+    font-display: swap;
+    src:
+        url("../fonts/NunitoSans-Italic.woff") format("woff"),
+        url("../fonts/NunitoSans-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
 }
 
 @font-face {
@@ -215,6 +195,26 @@
         url("../fonts/NunitoSans-Regular.woff") format("woff"),
         url("../fonts/NunitoSans-Regular.woff2") format("woff2");
     font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: NunitoSans;
+    font-display: swap;
+    src:
+        url("../fonts/NunitoSans-Bold.woff") format("woff"),
+        url("../fonts/NunitoSans-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: NunitoSans;
+    font-display: swap;
+    src:
+        url("../fonts/NunitoSans-SemiBold.woff") format("woff"),
+        url("../fonts/NunitoSans-SemiBold.woff2") format("woff2");
+    font-weight: 600;
     font-style: normal;
 }
 

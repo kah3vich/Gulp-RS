@@ -1,11 +1,10 @@
 @font-face {
 	font-family : Inter;
 	font-display : swap;
-	src : url("../fonts/Inter-ExtraBold.woff") format("woff"), url("../fonts/Inter-ExtraBold.woff2") format("woff2");
-	font-weight : 800;
+	src : url("../fonts/Inter-Black.woff") format("woff"), url("../fonts/Inter-Black.woff2") format("woff2");
+	font-weight : 900;
 	font-style : normal;
 }
-
 @font-face {
 	font-family : Inter;
 	font-display : swap;
@@ -13,23 +12,13 @@
 	font-weight : 700;
 	font-style : normal;
 }
-
 @font-face {
 	font-family : Inter;
 	font-display : swap;
-	src : url("../fonts/Inter-Black.woff") format("woff"), url("../fonts/Inter-Black.woff2") format("woff2");
-	font-weight : 900;
+	src : url("../fonts/Inter-ExtraBold.woff") format("woff"), url("../fonts/Inter-ExtraBold.woff2") format("woff2");
+	font-weight : 800;
 	font-style : normal;
 }
-
-@font-face {
-	font-family : Inter;
-	font-display : swap;
-	src : url("../fonts/Inter-ExtraLight.woff") format("woff"), url("../fonts/Inter-ExtraLight.woff2") format("woff2");
-	font-weight : 200;
-	font-style : normal;
-}
-
 @font-face {
 	font-family : Inter;
 	font-display : swap;
@@ -37,15 +26,13 @@
 	font-weight : 300;
 	font-style : normal;
 }
-
 @font-face {
 	font-family : Inter;
 	font-display : swap;
-	src : url("../fonts/Inter-SemiBold.woff") format("woff"), url("../fonts/Inter-SemiBold.woff2") format("woff2");
-	font-weight : 600;
+	src : url("../fonts/Inter-ExtraLight.woff") format("woff"), url("../fonts/Inter-ExtraLight.woff2") format("woff2");
+	font-weight : 200;
 	font-style : normal;
 }
-
 @font-face {
 	font-family : Inter;
 	font-display : swap;
@@ -53,7 +40,6 @@
 	font-weight : 400;
 	font-style : normal;
 }
-
 @font-face {
 	font-family : Inter;
 	font-display : swap;
@@ -61,31 +47,13 @@
 	font-weight : 500;
 	font-style : normal;
 }
-
 @font-face {
 	font-family : Inter;
 	font-display : swap;
-	src : url("../fonts/Inter-Thin.woff") format("woff"), url("../fonts/Inter-Thin.woff2") format("woff2");
-	font-weight : 100;
+	src : url("../fonts/Inter-SemiBold.woff") format("woff"), url("../fonts/Inter-SemiBold.woff2") format("woff2");
+	font-weight : 600;
 	font-style : normal;
 }
-
-@font-face {
-	font-family : NunitoSans;
-	font-display : swap;
-	src : url("../fonts/NunitoSans-BlackItalic.woff") format("woff"), url("../fonts/NunitoSans-BlackItalic.woff2") format("woff2");
-	font-weight : 900;
-	font-style : italic;
-}
-
-@font-face {
-	font-family : NunitoSans;
-	font-display : swap;
-	src : url("../fonts/NunitoSans-Bold.woff") format("woff"), url("../fonts/NunitoSans-Bold.woff2") format("woff2");
-	font-weight : 700;
-	font-style : normal;
-}
-
 @font-face {
 	font-family : NunitoSans;
 	font-display : swap;
@@ -93,15 +61,13 @@
 	font-weight : 900;
 	font-style : normal;
 }
-
 @font-face {
 	font-family : NunitoSans;
 	font-display : swap;
-	src : url("../fonts/NunitoSans-ExtraBold.woff") format("woff"), url("../fonts/NunitoSans-ExtraBold.woff2") format("woff2");
-	font-weight : 800;
-	font-style : normal;
+	src : url("../fonts/NunitoSans-BlackItalic.woff") format("woff"), url("../fonts/NunitoSans-BlackItalic.woff2") format("woff2");
+	font-weight : 900;
+	font-style : italic;
 }
-
 @font-face {
 	font-family : NunitoSans;
 	font-display : swap;
@@ -109,7 +75,20 @@
 	font-weight : 700;
 	font-style : italic;
 }
-
+@font-face {
+	font-family : Inter;
+	font-display : swap;
+	src : url("../fonts/Inter-Thin.woff") format("woff"), url("../fonts/Inter-Thin.woff2") format("woff2");
+	font-weight : 100;
+	font-style : normal;
+}
+@font-face {
+	font-family : NunitoSans;
+	font-display : swap;
+	src : url("../fonts/NunitoSans-ExtraBold.woff") format("woff"), url("../fonts/NunitoSans-ExtraBold.woff2") format("woff2");
+	font-weight : 800;
+	font-style : normal;
+}
 @font-face {
 	font-family : NunitoSans;
 	font-display : swap;
@@ -117,31 +96,6 @@
 	font-weight : 200;
 	font-style : italic;
 }
-
-@font-face {
-	font-family : NunitoSans;
-	font-display : swap;
-	src : url("../fonts/NunitoSans-Light.woff") format("woff"), url("../fonts/NunitoSans-Light.woff2") format("woff2");
-	font-weight : 300;
-	font-style : normal;
-}
-
-@font-face {
-	font-family : NunitoSans;
-	font-display : swap;
-	src : url("../fonts/NunitoSans-Italic.woff") format("woff"), url("../fonts/NunitoSans-Italic.woff2") format("woff2");
-	font-weight : 400;
-	font-style : italic;
-}
-
-@font-face {
-	font-family : NunitoSans;
-	font-display : swap;
-	src : url("../fonts/NunitoSans-LightItalic.woff") format("woff"), url("../fonts/NunitoSans-LightItalic.woff2") format("woff2");
-	font-weight : 300;
-	font-style : italic;
-}
-
 @font-face {
 	font-family : NunitoSans;
 	font-display : swap;
@@ -149,7 +103,6 @@
 	font-weight : 800;
 	font-style : italic;
 }
-
 @font-face {
 	font-family : NunitoSans;
 	font-display : swap;
@@ -157,15 +110,27 @@
 	font-weight : 200;
 	font-style : normal;
 }
-
 @font-face {
 	font-family : NunitoSans;
 	font-display : swap;
-	src : url("../fonts/NunitoSans-SemiBold.woff") format("woff"), url("../fonts/NunitoSans-SemiBold.woff2") format("woff2");
-	font-weight : 600;
+	src : url("../fonts/NunitoSans-Light.woff") format("woff"), url("../fonts/NunitoSans-Light.woff2") format("woff2");
+	font-weight : 300;
 	font-style : normal;
 }
-
+@font-face {
+	font-family : NunitoSans;
+	font-display : swap;
+	src : url("../fonts/NunitoSans-LightItalic.woff") format("woff"), url("../fonts/NunitoSans-LightItalic.woff2") format("woff2");
+	font-weight : 300;
+	font-style : italic;
+}
+@font-face {
+	font-family : NunitoSans;
+	font-display : swap;
+	src : url("../fonts/NunitoSans-Italic.woff") format("woff"), url("../fonts/NunitoSans-Italic.woff2") format("woff2");
+	font-weight : 400;
+	font-style : italic;
+}
 @font-face {
 	font-family : NunitoSans;
 	font-display : swap;
@@ -173,7 +138,20 @@
 	font-weight : 400;
 	font-style : normal;
 }
-
+@font-face {
+	font-family : NunitoSans;
+	font-display : swap;
+	src : url("../fonts/NunitoSans-Bold.woff") format("woff"), url("../fonts/NunitoSans-Bold.woff2") format("woff2");
+	font-weight : 700;
+	font-style : normal;
+}
+@font-face {
+	font-family : NunitoSans;
+	font-display : swap;
+	src : url("../fonts/NunitoSans-SemiBold.woff") format("woff"), url("../fonts/NunitoSans-SemiBold.woff2") format("woff2");
+	font-weight : 600;
+	font-style : normal;
+}
 @font-face {
 	font-family : NunitoSans;
 	font-display : swap;
@@ -181,36 +159,25 @@
 	font-weight : 600;
 	font-style : italic;
 }
-
 *
 ,
 *::before
 ,
 *::after {
-	-webkit-box-sizing : border-box;
-	        box-sizing : border-box;
+	box-sizing : border-box;
 	padding : 0;
 	margin : 0;
 	-webkit-font-smoothing : antialiased;
 	text-rendering : optimizeLegibility;
 	overflow-wrap : break-word;
-	-webkit-user-select : text;
-	   -moz-user-select : text;
-	    -ms-user-select : text;
-	        user-select : text;
+	user-select : text;
 }
 
 body {
-	display : -webkit-box;
-	display : -ms-flexbox;
 	display : flex;
 	width : 100%;
 	height : 100vh;
-	-webkit-box-align : center;
-	-ms-flex-align : center;
 	align-items : center;
-	-webkit-box-pack : center;
-	-ms-flex-pack : center;
 	justify-content : center;
 	background-color : #1e4029;
 	overflow : hidden;
@@ -305,16 +272,12 @@ opacity-h {
 .logo {
 	width : 450px;
 	height : 450px;
-	-webkit-animation : rotate 10s infinite linear;
-	        animation : rotate 10s infinite linear;
-	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
-	        transition : all 0.5s ease;
+	animation : rotate 10s infinite linear;
+	transition : all 0.5s ease;
 	position : relative;
 	z-index : 5;
 	cursor : pointer;
 }
-
 .logo svg {
 	width : 450px;
 	height : 450px;
@@ -325,192 +288,110 @@ opacity-h {
 	position : absolute;
 	top : 50%;
 	left : 50%;
-	-webkit-transform : translate(-50%, -50%);
-	    -ms-transform : translate(-50%, -50%);
-	        transform : translate(-50%, -50%);
-	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
-	        transition : all 0.5s ease;
+	transform : translate(-50%, -50%);
+	transition : all 0.5s ease;
 }
-
 .gulp img {
 	width : 250px;
 	height : 150px;
 }
-
 .gulp svg {
 	width : 200px;
 	height : 100px;
 	fill : #d5a54e;
 }
-
 .gulp svg g {
 	fill : #d5a54e;
 	stroke : #d5a54e;
 }
 
 .header__list {
-	display : -webkit-box;
-	display : -ms-flexbox;
 	display : flex;
-	-webkit-box-orient : vertical;
-	-webkit-box-direction : normal;
-	-ms-flex-direction : column;
-	    flex-direction : column;
-	-webkit-box-align : start;
-	-ms-flex-align : start;
+	flex-direction : column;
 	align-items : flex-start;
-	-webkit-box-pack : end;
-	-ms-flex-pack : end;
 	justify-content : flex-end;
 	position : absolute;
 	left : 20px;
 	bottom : 30px;
 }
-
 .header__list-item {
-	-webkit-box-align : center;
-	-ms-flex-align : center;
 	align-items : center;
 	background-color : transparent;
 	border : 1px solid rgba(213, 165, 78, 0.2);
 	cursor : pointer;
-	display : -webkit-box;
-	display : -ms-flexbox;
 	display : flex;
 	height : 40px;
-	-webkit-box-pack : center;
-	-ms-flex-pack : center;
 	justify-content : center;
-	-webkit-transition : 0.4s ease;
-	     -o-transition : 0.4s ease;
-	        transition : 0.4s ease;
+	transition : 0.4s ease;
 	width : 40px;
 	color : #d5a54e;
 	position : relative;
 	margin : 12px 0 0 0;
 }
-
 .header__list-item:hover {
 	background : #d5a54e;
-	-webkit-transition : 0.4s ease;
-	     -o-transition : 0.4s ease;
-	        transition : 0.4s ease;
+	transition : 0.4s ease;
 	color : #000000;
 }
-
 .header__list-item:hover.header__list-item p {
 	opacity : 1;
-	-webkit-transition : all 0.5 ease;
-	     -o-transition : all 0.5 ease;
-	        transition : all 0.5 ease;
+	transition : all 0.5 ease;
 }
-
 .header__list-item p {
-	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
-	        transition : all 0.5s ease;
+	transition : all 0.5s ease;
 	opacity : 0;
 	position : absolute;
 	top : 55%;
-	-webkit-transform : translate(0%, -55%);
-	    -ms-transform : translate(0%, -55%);
-	        transform : translate(0%, -55%);
+	transform : translate(0%, -55%);
 	font-weight : 500;
 	min-width : 150px;
 	width : 100%;
 	right : -160px;
 	color : #000000;
 }
-
 .header__version {
 	position : absolute;
 	right : 30px;
 	bottom : 30px;
-	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
-	        transition : all 0.5s ease;
+	transition : all 0.5s ease;
 	font-weight : 500;
 	color : #d5a54e;
 	cursor : pointer;
 }
-
 .header__version:hover {
-	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
-	        transition : all 0.5s ease;
+	transition : all 0.5s ease;
 	color : rgb(255, 166, 0);
 }
-
 .header__version a {
 	color : #d5a54e;
 }
 
-@-webkit-keyframes rotate {
-	0% {
-		-webkit-transform : rotate(0);
-		        transform : rotate(0);
-	}
-
-	25% {
-		-webkit-transform : rotate(90deg);
-		        transform : rotate(90deg);
-	}
-
-	50% {
-		-webkit-transform : rotate(180deg);
-		        transform : rotate(180deg);
-	}
-
-	75% {
-		-webkit-transform : rotate(270deg);
-		        transform : rotate(270deg);
-	}
-
-	100% {
-		-webkit-transform : rotate(360deg);
-		        transform : rotate(360deg);
-	}
-}
-
 @keyframes rotate {
 	0% {
-		-webkit-transform : rotate(0);
-		        transform : rotate(0);
+		transform : rotate(0);
 	}
-
 	25% {
-		-webkit-transform : rotate(90deg);
-		        transform : rotate(90deg);
+		transform : rotate(90deg);
 	}
-
 	50% {
-		-webkit-transform : rotate(180deg);
-		        transform : rotate(180deg);
+		transform : rotate(180deg);
 	}
-
 	75% {
-		-webkit-transform : rotate(270deg);
-		        transform : rotate(270deg);
+		transform : rotate(270deg);
 	}
-
 	100% {
-		-webkit-transform : rotate(360deg);
-		        transform : rotate(360deg);
+		transform : rotate(360deg);
 	}
 }
-
 @media (max-width: 550px) {
 	.logo {
 		width : 350px;
 		height : 350px;
 	}
-
 	.logo svg {
 		width : 350px;
 		height : 350px;
 	}
-
 	.gulp svg {
 		width : 150px;
 		height : 75px;
