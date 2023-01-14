@@ -1,0 +1,7 @@
+mixin welcomeCard(href, title, description)
+    a(href=href).welcomeCard
+        .welcome-card__title 
+            h5= title
+            svg.welcome-card__icon
+                use(xlink:href="./svg/sprite.svg#arrow-right")
+        p.welcome-card__title= description

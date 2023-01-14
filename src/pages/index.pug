@@ -1,21 +1,16 @@
 extends ../layouts/default
 
 block variables
-	- const title = "New Page";
+	- const title = "Main Page";
 
 block content
-	include ../layouts/header
+	include ../components/Header/index
 
-	
-	<svg class="social__icon">
-		<use xlink:href="./svg/sprite.svg#gulp"></use>
-	</svg>
-	img(src="https://raw.githubusercontent.com/kah3vich/Gulp-RS/master/main/logo.svg")
+	include ../components/_Welcome/index
 
-	include ../layouts/footer
+	include ../components/Footer/index
 
-block modal
-	.modal
+	include ../components/Modal/index
 
 block scripts
 	script(src="js/main.js")

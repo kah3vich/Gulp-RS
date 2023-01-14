@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>New Page</title>
+    <title>Main Page</title>
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -24,15 +24,35 @@
     <link rel="apple-touch-icon" sizes="167x167" href="img/favicon/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicon/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230115003004">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20230115003004" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="css/style.min.css?_v=20230115025253">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20230115025253" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
   <body>
-    <header>123</header><svg class="social__icon">
-<use xlink:href="./svg/sprite.svg#gulp"></use>
-</svg><img src="https://raw.githubusercontent.com/kah3vich/Gulp-RS/master/main/logo.svg">
-    <footer>123</footer>
-    <div class="modal"></div>
-    <script src="js/main.js?_v=20230115003004"></script>
+    <section class="welcome">
+      <div class="containers">
+        <div class="welcome__logo"><img src="https://raw.githubusercontent.com/kah3vich/Gulp-RS/master/assets/svg/logo.svg"></div>
+        <ul class="welcome__content"> 
+          <li class="welcome__item"> <a class="welcomeCard" href="/">
+              <div class="welcome-card__title"> 
+                <h5>Get Started</h5>
+                <svg class="welcome-card__icon">
+                  <use xlink:href="./svg/sprite.svg#arrow-right"></use>
+                </svg>
+              </div>
+              <p class="welcome-card__title">Article on quick start set GulpRS.</p></a>
+          </li>
+          <li class="welcome__item"> <a class="welcomeCard" href="/">
+              <div class="welcome-card__title"> 
+                <h5>Documentation</h5>
+                <svg class="welcome-card__icon">
+                  <use xlink:href="./svg/sprite.svg#arrow-right"></use>
+                </svg>
+              </div>
+              <p class="welcome-card__title">Read more about GulpRS in the documentation.</p></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script src="js/main.js?_v=20230115025253"></script>
   </body>
 </html>

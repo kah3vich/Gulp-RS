@@ -1,5 +1,7 @@
 block variables
 
+include ../components/mixins
+
 doctype html
 html(lang="ru")
 	head
@@ -26,10 +28,7 @@ html(lang="ru")
 		link(rel="apple-touch-icon" sizes="167x167" href="img/favicon/apple-touch-icon-167x167.png")
 		link(rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png")
 		link(rel="apple-touch-icon" sizes="1024x1024" href="img/favicon/apple-touch-icon-1024x1024.png")
-		link(rel="stylesheet" href="css/style.min.css")
-		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer")
-
+		include ../import/index
 	body
 		block content
-		block modal
 		block scripts
