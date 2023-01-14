@@ -1,6 +1,6 @@
 {
 	"name": "gulp-rs",
-	"description": "Frontend development with pleasure",
+	"description": "What is art ? Like a declaration of love: the consciousness of our dependence on each other. A confession. An unconscious act that none the less reflects the true meaning of life - love and sacrifice. Yojka",
 	"author": "kah3vich",
 	"license": "ISC",
 	"repository": {
@@ -11,10 +11,13 @@
 		"start": "gulp",
 		"build": "gulp build --build",
 		"export:zip": "gulp deployZIP --build",
-		"lint": "npx eslint src/js/**/*.js",
-		"lint:fix": "npx eslint src/js/**/*.js --fix",
+		"lint:script": "npx eslint \"src/js/**/*.js\"",
+		"lint:script-fix": "npx eslint \"src/js/**/*.js\" --fix",
+		"lint:styles": "stylelint \"src/**/*.scss\"",
+		"lint:styles-fix": "stylelint --fix \"src/**/*.scss\"",
 		"prepare": "husky install",
-		"create-hook": "husky add .husky/pre-commit \"npm test\""
+		"prettier:check": "npx prettier --check .",
+		"prettier:write": "npx prettier --write ."
 	},
 	"type": "module",
 	"devDependencies": {
@@ -41,7 +44,6 @@
 		"gulp-csscomb": "^3.1.0",
 		"gulp-debug": "^4.0.0",
 		"gulp-favicons": "^3.0.0",
-		"gulp-file-include": "^2.3.0",
 		"gulp-filesize": "0.0.6",
 		"gulp-flatten": "^0.4.0",
 		"gulp-fonter": "^0.3.0",
@@ -63,23 +65,35 @@
 		"gulp-uglify": "^3.0.2",
 		"gulp-uglify-es": "^3.0.0",
 		"gulp-version-number": "^0.2.4",
-		"gulp-webp": "^4.0.1",
-		"gulp-webp-html-nosvg": "^1.0.1",
-		"gulp-webpcss": "^1.1.1",
 		"gulp-zip": "^5.1.0",
 		"husky": "^8.0.3",
 		"lint-staged": "^13.1.0",
 		"path": "^0.12.7",
 		"prettier": "^2.6.2",
 		"sass": "^1.45.1",
-		"webp-converter": "2.2.3",
+		"stylelint": "^14.5.3",
+		"stylelint-config-standard-scss": "^3.0.0",
+		"stylelint-order": "^5.0.0",
+		"stylelint-selector-bem-pattern": "^2.1.1"
+	},
+	"dependencies": {
 		"webpack": "^5.65.0",
 		"webpack-stream": "^7.0.0"
 	},
-	"dependencies": {
-		"progress-stream": "^2.0.0"
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
 	},
 	"lint-staged": {
-		"**/*": "prettier --write --ignore-unknown"
+		"**/*": [
+			"prettier --write --ignore-unknown"
+		],
+		"*.scss": [
+			"stylelint --fix --allow-empty-input"
+		],
+		"*.js": [
+			"eslint --fix"
+		]
 	}
 }
