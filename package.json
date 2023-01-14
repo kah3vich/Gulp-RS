@@ -12,7 +12,9 @@
 		"build": "gulp build --build",
 		"export:zip": "gulp deployZIP --build",
 		"lint": "npx eslint src/js/**/*.js",
-		"lint:fix": "npx eslint src/js/**/*.js --fix"
+		"lint:fix": "npx eslint src/js/**/*.js --fix",
+		"prepare": "husky install",
+		"create-hook": "husky add .husky/pre-commit \"npm test\""
 	},
 	"type": "module",
 	"devDependencies": {
@@ -65,6 +67,8 @@
 		"gulp-webp-html-nosvg": "^1.0.1",
 		"gulp-webpcss": "^1.1.1",
 		"gulp-zip": "^5.1.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^13.1.0",
 		"path": "^0.12.7",
 		"prettier": "^2.6.2",
 		"sass": "^1.45.1",
@@ -74,5 +78,8 @@
 	},
 	"dependencies": {
 		"progress-stream": "^2.0.0"
+	},
+	"lint-staged": {
+		"**/*": "prettier --write --ignore-unknown"
 	}
 }
