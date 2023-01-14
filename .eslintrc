@@ -1,24 +1,26 @@
 {
-    "extends": "airbnb-base",
-    "ignorePatterns": ["gulpfile.js", "src/js/script.js"],
-    "env": {
-        "browser": true,
-        "jquery": true,
-        "node": 1,
-    },
-    "rules": {
-        "prefer-const": ["error", {
-            "destructuring": "any",
-            "ignoreReadBeforeAssign": false
-        }],
-        "linebreak-style": ["error", "windows"],
-        "no-var": "error",
-        "quotes": [2, "single", { "avoidEscape": true }],
-        "indent": ["error", 4, { "ignoredNodes": ["ConditionalExpression"]}],
-        "no-console": 0,
-        "no-use-before-define": ["error", { "functions": true, "classes": true, "variables": true }],
-        "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
-        "no-unused-vars": "disable",
-        "no-plusplus": "disable",
-    },
+	"extends": "airbnb-base",
+	"ignorePatterns": ["gulpfile.js", "src/js/script.js"],
+	"env": {
+		"browser": true,
+		"jquery": true,
+		"node": true
+	},
+	"rules": {
+		"prefer-const": [
+			"error",
+			{
+				"destructuring": "any",
+				"ignoreReadBeforeAssign": false
+			}
+		],
+		"linebreak-style": ["error", "windows"],
+		"no-var": "error",
+		"quotes": [2, "single", { "avoidEscape": true }],
+		"indent": ["error", 4, { "ignoredNodes": ["ConditionalExpression"] }],
+		"no-console": 0,
+		"no-use-before-define": ["error", { "functions": true, "classes": true, "variables": true }],
+		"no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+		"no-unused-vars": "off"
+	}
 }

@@ -1,5 +1,3 @@
-export const titles = 'test'
+export const titles = 'test';
 
-export const changeText = str => {
-	return str.split(' ').join(', ')
-}
+export const changeText = (str) => str.split(' ').join(', ');

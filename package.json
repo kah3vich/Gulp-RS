@@ -8,10 +8,11 @@
 		"url": "https://github.com/kah3vich/Gulp-RS"
 	},
 	"scripts": {
-		"dev": "gulp",
+		"start": "gulp",
 		"build": "gulp build --build",
-		"zip": "gulp deployZIP --build",
-		"fix": "npx eslint src/js/**/*.js --fix"
+		"export:zip": "gulp deployZIP --build",
+		"lint": "npx eslint src/js/**/*.js",
+		"lint:fix": "npx eslint src/js/**/*.js --fix"
 	},
 	"type": "module",
 	"devDependencies": {
