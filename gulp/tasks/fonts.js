@@ -3,37 +3,13 @@ import flatten from "gulp-flatten";
 import fonter from "gulp-fonter";
 import ttf2woff2 from "gulp-ttf2woff2";
 
-// var fs = require('');
-// var gulp = require('gulp');
-// var progress = require('progress-stream');
-
-// var filePath = './src/fonts/';
-// var fileSize = fs.statSync(filePath).size;
-
-// var progressStream = progress({
-//   length: fileSize,
-//   time: 10,
-//   objectMode: true
-// });
-
-// let counter = 0
-
-// progressStream.on('progress', function (stats) {
-//   console.log(Math.round(stats.percentage) + '%');
-//   fs.readdir('./src/fonts/Inter', (err, files) => {
-// 	// files.forEach(file => {
-// 	  console.log(files[0]);
-// 	// });
-//   });
-// });
-
 export const otfToTtf = () => {
 	return app.gulp
-		.src(`${app.path.srcFolder}/fonts/**/*.otf`, {})
+		.src(`${app.path.srcFolder}/fonts/**/*.otf`)
 		.pipe(
 			app.plugins.plumber(
 				app.plugins.notify.onError({
-					title: "FONTS",
+					title: "Font: otf to ttf",
 					message: "Error: <%= error.message %>",
 				})
 			)
@@ -49,41 +25,37 @@ export const otfToTtf = () => {
 export const ttfToWoff = () => {
 	return app.gulp
 		.src(`${app.path.srcFolder}/fonts/**/*.ttf`, { dot: true })
-		
 		.pipe(
 			app.plugins.plumber(
 				app.plugins.notify.onError({
-					title: "FONTS",
+					title: "Font: ttf to woff",
 					message: "Error: <%= error.message %>",
 				})
 			)
 		)
-		// .pipe(progressStream)
 		.pipe(
 			fonter({
 				formats: ["woff"],
 				
 			})
 		)
-
 		.pipe(flatten())
 		.pipe(app.gulp.dest(app.path.build.fonts))
 		.pipe(app.gulp.src(`${app.path.srcFolder}/fonts/**/*.ttf`))
-		// .pipe(progressStream)
 		.pipe(app.plugins.if(app.isBuild, ttf2woff2()))
 		.pipe(flatten())
 		.pipe(app.gulp.dest(app.path.build.fonts));
 };
 
 export const fontsStyle = () => {
-	let fonstFile = `${app.path.srcFolder}/scss/fonts.scss`;
-	fs.readdir(app.path.build.fonts, function (err, fonstFiles) {
-		if (fonstFiles) {
-			if (!fs.existsSync(fonstFile)) {
-				fs.writeFile(fonstFile, "", emptyFunction);
+	let fontsFile = `${app.path.srcFolder}/scss/fonts.scss`;
+	fs.readdir(app.path.build.fonts, function (err, fontsFiles) {
+		if (fontsFiles) {
+			if (!fs.existsSync(fontsFile)) {
+				fs.writeFile(fontsFile, "", emptyFunction);
 				let newFileOnly;
-				for (var i = 0; i < fonstFiles.length; i++) {
-					let fontFileName = fonstFiles[i].split(".")[0];
+				for (var i = 0; i < fontsFiles.length; i++) {
+					let fontFileName = fontsFiles[i].split(".")[0];
 					
 					if (newFileOnly !== fontFileName) {
 						let fontName = fontFileName.split("-")[0]
@@ -193,7 +165,7 @@ export const fontsStyle = () => {
 							fontStyle = "normal";
 						}
 						fs.appendFile(
-							fonstFile,
+							fontsFile,
 							`@font-face { \n\tfont-family: ${fontName}; \n\tfont-display: swap; \n\tsrc: url("../fonts/${fontFileName}.woff") format("woff"), url("../fonts/${fontFileName}.woff2") format("woff2"); \n\tfont-weight: ${fontWight}; \n\tfont-style: ${fontStyle}; \n}\r\n`,
 							emptyFunction
 						);

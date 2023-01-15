@@ -1,4 +1,4 @@
-.
+https://kah3vich.github.io/Gulp-RS/public/index.html
 
 1. method components
 2. mixin
@@ -12,6 +12,8 @@
 10. added license - ready
 11. added base readme file
 12. added github - active pages - ready
+
+<div id="script">
 
 ### Install dependencies:
 
@@ -31,20 +33,57 @@ yarn start
 yarn build
 ```
 
-### Export project in ZIP:
+### Build project in ZIP:
 
 ```bash
-yarn export:zip
+yarn build:zip
 ```
 
-### Lint:
+### ESLint script check:
 
 ```bash
-yarn lint
+yarn lint:script
 ```
 
-### Lint fix code:
+### ESLint script fix:
 
 ```bash
-yarn lint:fix
+yarn lint:script-fix
 ```
+
+### StyleLint style check:
+
+```bash
+yarn lint:styles
+```
+
+### StyleLint style fix:
+
+```bash
+yarn lint:styles-fix
+```
+
+### Prettier code check:
+
+```bash
+yarn prettier:check
+```
+
+### Prettier code fix:
+
+```bash
+yarn prettier:write
+```
+
+//TODO: fix
+// "lint-staged": {
+// "\*_/_": [
+// "prettier --write --ignore-unknown"
+// ],
+// "_.scss": [
+// "stylelint --fix --allow-empty-input"
+// ],
+// "_.js": [
+// "eslint --fix"
+// ]
+// }

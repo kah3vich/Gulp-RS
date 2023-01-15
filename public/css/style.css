@@ -1,40 +1,8 @@
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
-	src : url("../fonts/TTNorms-BlackItalic.woff") format("woff"), url("../fonts/TTNorms-BlackItalic.woff2") format("woff2");
-	font-weight : 900;
-	font-style : italic;
-}
-
-@font-face {
-	font-family : TTNorms;
-	font-display : swap;
 	src : url("../fonts/TTNorms-Black.woff") format("woff"), url("../fonts/TTNorms-Black.woff2") format("woff2");
 	font-weight : 900;
-	font-style : normal;
-}
-
-@font-face {
-	font-family : TTNorms;
-	font-display : swap;
-	src : url("../fonts/TTNorms-Bold.woff") format("woff"), url("../fonts/TTNorms-Bold.woff2") format("woff2");
-	font-weight : 700;
-	font-style : normal;
-}
-
-@font-face {
-	font-family : TTNorms;
-	font-display : swap;
-	src : url("../fonts/TTNorms-ExtraBold.woff") format("woff"), url("../fonts/TTNorms-ExtraBold.woff2") format("woff2");
-	font-weight : 800;
-	font-style : normal;
-}
-
-@font-face {
-	font-family : TTNorms;
-	font-display : swap;
-	src : url("../fonts/TTNorms-ExtraLight.woff") format("woff"), url("../fonts/TTNorms-ExtraLight.woff2") format("woff2");
-	font-weight : 200;
 	font-style : normal;
 }
 
@@ -49,16 +17,40 @@
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
-	src : url("../fonts/TTNorms-ExtraLightItalic.woff") format("woff"), url("../fonts/TTNorms-ExtraLightItalic.woff2") format("woff2");
-	font-weight : 200;
+	src : url("../fonts/TTNorms-Bold.woff") format("woff"), url("../fonts/TTNorms-Bold.woff2") format("woff2");
+	font-weight : 700;
+	font-style : normal;
+}
+
+@font-face {
+	font-family : TTNorms;
+	font-display : swap;
+	src : url("../fonts/TTNorms-BlackItalic.woff") format("woff"), url("../fonts/TTNorms-BlackItalic.woff2") format("woff2");
+	font-weight : 900;
 	font-style : italic;
 }
 
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
-	src : url("../fonts/TTNorms-HeavyItalic.woff") format("woff"), url("../fonts/TTNorms-HeavyItalic.woff2") format("woff2");
-	font-weight : 900;
+	src : url("../fonts/TTNorms-ExtraLight.woff") format("woff"), url("../fonts/TTNorms-ExtraLight.woff2") format("woff2");
+	font-weight : 200;
+	font-style : normal;
+}
+
+@font-face {
+	font-family : TTNorms;
+	font-display : swap;
+	src : url("../fonts/TTNorms-ExtraBold.woff") format("woff"), url("../fonts/TTNorms-ExtraBold.woff2") format("woff2");
+	font-weight : 800;
+	font-style : normal;
+}
+
+@font-face {
+	font-family : TTNorms;
+	font-display : swap;
+	src : url("../fonts/TTNorms-ExtraLightItalic.woff") format("woff"), url("../fonts/TTNorms-ExtraLightItalic.woff2") format("woff2");
+	font-weight : 200;
 	font-style : italic;
 }
 
@@ -81,8 +73,8 @@
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
-	src : url("../fonts/TTNorms-Italic.woff") format("woff"), url("../fonts/TTNorms-Italic.woff2") format("woff2");
-	font-weight : 400;
+	src : url("../fonts/TTNorms-HeavyItalic.woff") format("woff"), url("../fonts/TTNorms-HeavyItalic.woff2") format("woff2");
+	font-weight : 900;
 	font-style : italic;
 }
 
@@ -105,17 +97,17 @@
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
-	src : url("../fonts/TTNorms-MediumItalic.woff") format("woff"), url("../fonts/TTNorms-MediumItalic.woff2") format("woff2");
+	src : url("../fonts/TTNorms-Medium.woff") format("woff"), url("../fonts/TTNorms-Medium.woff2") format("woff2");
 	font-weight : 500;
-	font-style : italic;
+	font-style : normal;
 }
 
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
-	src : url("../fonts/TTNorms-Medium.woff") format("woff"), url("../fonts/TTNorms-Medium.woff2") format("woff2");
-	font-weight : 500;
-	font-style : normal;
+	src : url("../fonts/TTNorms-ThinItalic.woff") format("woff"), url("../fonts/TTNorms-ThinItalic.woff2") format("woff2");
+	font-weight : 100;
+	font-style : italic;
 }
 
 @font-face {
@@ -137,98 +129,17 @@
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
-	src : url("../fonts/TTNorms-ThinItalic.woff") format("woff"), url("../fonts/TTNorms-ThinItalic.woff2") format("woff2");
-	font-weight : 100;
+	src : url("../fonts/TTNorms-MediumItalic.woff") format("woff"), url("../fonts/TTNorms-MediumItalic.woff2") format("woff2");
+	font-weight : 500;
 	font-style : italic;
 }
 
-.welcome {
-	width : 100%;
-}
-
-.welcome .containers {
-	position : relative;
-}
-
-.welcome__logo {
-	position : absolute;
-	top : -65%;
-	left : 50%;
-	-webkit-transform : translate(-50%, -65%);
-	    -ms-transform : translate(-50%, -65%);
-	        transform : translate(-50%, -65%);
-}
-
-.welcome__content {
-	display : -ms-grid;
-	display :     grid;
-	position : relative;
-	z-index : 1;
-	width : 60%;
-	margin : 0 auto;
-	grid-template-columns : repeat(auto-fill, minmax(300px, 1fr));
-	gap : 30px;
-}
-
-.welcome__item {
-	width : 100%;
-}
-
-.welcome-card {
-	display : -webkit-box;
-	display : -ms-flexbox;
-	display : flex;
-	-ms-flex-wrap : nowrap;
-	    flex-wrap : nowrap;
-	-webkit-box-orient : vertical;
-	-webkit-box-direction : normal;
-	-ms-flex-direction : column;
-	    flex-direction : column;
-	-webkit-box-align : start;
-	-ms-flex-align : start;
-	align-items : flex-start;
-	-webkit-box-pack : start;
-	-ms-flex-pack : start;
-	justify-content : flex-start;
-	gap : 12px;
-	width : 100%;
-	min-height : 120px;
-	border : 2px solid #d5a54e;
-	padding : 18px;
-	border-radius : 20px;
-}
-
-.welcome-card__title {
-	display : -webkit-box;
-	display : -ms-flexbox;
-	display : flex;
-	-ms-flex-wrap : nowrap;
-	    flex-wrap : nowrap;
-	-webkit-box-orient : horizontal;
-	-webkit-box-direction : normal;
-	-ms-flex-direction : row;
-	    flex-direction : row;
-	-webkit-box-align : center;
-	-ms-flex-align : center;
-	align-items : center;
-	-webkit-box-pack : start;
-	-ms-flex-pack : start;
-	justify-content : flex-start;
-	gap : 8px;
-}
-
-.welcome-card__title h5 {
-	font-weight : 600;
-	font-size : 18px;
-	line-height : 23px;
-	color : #d5a54e;
-	font-style : normal;
-}
-
-.welcome-card__icon {
-	fill : #d5a54e;
-	width : 55px;
-	height : 30px;
+@font-face {
+	font-family : TTNorms;
+	font-display : swap;
+	src : url("../fonts/TTNorms-Italic.woff") format("woff"), url("../fonts/TTNorms-Italic.woff2") format("woff2");
+	font-weight : 400;
+	font-style : italic;
 }
 
 *
@@ -338,7 +249,7 @@ h5 {
 	width : 100%;
 	max-width : 1440px;
 	margin : 0 auto;
-	padding : 0 165px;
+	padding : 0 20px;
 }
 
 .display-n {
@@ -347,4 +258,124 @@ h5 {
 
 opacity-h {
 	opacity : 0 !important;
+}
+
+.welcome {
+	width : 100%;
+}
+
+.welcome .containers {
+	position : relative;
+}
+
+.welcome__logo {
+	position : absolute;
+	top : -65%;
+	left : 50%;
+	-webkit-transform : translate(-50%, -65%);
+	    -ms-transform : translate(-50%, -65%);
+	        transform : translate(-50%, -65%);
+}
+
+.welcome__content {
+	display : -ms-grid;
+	display :     grid;
+	position : relative;
+	z-index : 1;
+	width : 60%;
+	margin : 0 auto;
+	grid-template-columns : repeat(auto-fill, minmax(300px, 1fr));
+	gap : 30px;
+}
+
+.welcome__item {
+	width : 100%;
+}
+
+.welcomeCard {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	gap : 12px;
+	width : 100%;
+	min-height : 120px;
+	border : 2px solid #d5a54e;
+	padding : 18px;
+	border-radius : 20px;
+	background-color : #1e4029;
+}
+
+.welcomeCard:hover svg {
+	-webkit-transform : translateX(10px);
+	    -ms-transform : translateX(10px);
+	        transform : translateX(10px);
+}
+
+.welcomeCard:hover p {
+	color : #ffffff;
+}
+
+.welcomeCard__title {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-ms-flex-wrap : nowrap;
+	    flex-wrap : nowrap;
+	-webkit-box-orient : horizontal;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : row;
+	    flex-direction : row;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	gap : 0;
+}
+
+.welcomeCard__title h5 {
+	font-weight : 600;
+	font-size : 18px;
+	line-height : 23px;
+	color : #d5a54e;
+	font-style : normal;
+}
+
+.welcomeCard__title svg {
+	fill : #d5a54e;
+	width : 35px;
+	height : 25px;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+}
+
+.welcomeCard__text {
+	font-weight : 500;
+	font-size : 14px;
+	line-height : 19px;
+	color : #000000;
+	font-style : normal;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+}
+
+@media screen and (max-width: 550px) {
+	.welcome__content {
+		width : 100%;
+	}
 }

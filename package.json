@@ -10,12 +10,11 @@
 	"scripts": {
 		"start": "gulp",
 		"build": "gulp build --build",
-		"export:zip": "gulp deployZIP --build",
+		"build:zip": "gulp deployZIP --build",
 		"lint:script": "npx eslint \"src/js/**/*.js\"",
 		"lint:script-fix": "npx eslint \"src/js/**/*.js\" --fix",
 		"lint:styles": "stylelint \"src/**/*.scss\"",
 		"lint:styles-fix": "stylelint --fix \"src/**/*.scss\"",
-		"prepare": "husky install",
 		"prettier:check": "npx prettier --check .",
 		"prettier:write": "npx prettier --write ."
 	},
@@ -88,9 +87,6 @@
 	"lint-staged": {
 		"**/*": [
 			"prettier --write --ignore-unknown"
-		],
-		"*.scss": [
-			"stylelint --fix --allow-empty-input"
 		],
 		"*.js": [
 			"eslint --fix"

@@ -22,6 +22,8 @@
 		"no-use-before-define": ["error", { "functions": true, "classes": true, "variables": true }],
 		"no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
 		"no-unused-vars": "off",
-		"import/prefer-default-export": "off"
+		"import/prefer-default-export": "off",
+		"import/extensions": "off",
+		"spaced-comment": "off"
 	}
 }

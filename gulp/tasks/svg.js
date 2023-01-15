@@ -13,13 +13,11 @@ export const svg = () => {
 			)
 		)
 		.pipe(app.gulp.src(app.path.src.svg))
-		.pipe(
-			svgmin({
-				js2svg: {
-					pretty: false,
-				},
-			})
-		)
+		.pipe(app.plugins.if(app.isBuild, svgmin({
+			js2svg: {
+				pretty: false,
+			},
+		})))
 		.pipe(
 			svgSprite({
 				mode: {

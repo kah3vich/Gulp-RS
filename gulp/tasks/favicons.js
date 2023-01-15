@@ -1,9 +1,17 @@
-// import debug from "gulp-debug";
+
 import favicons from "gulp-favicons";
 
 export const favicon = () => {
     return app.gulp
         .src(app.path.src.faviconPath)
+        .pipe(
+			app.plugins.plumber(
+				app.plugins.notify.onError({
+					title: "Favicons",
+					message: "Error: <%= error.message %>",
+				})
+			)
+		)
         .pipe(favicons({
             icons: {
                 appleIcon: true,
@@ -17,10 +25,6 @@ export const favicon = () => {
                 coast: false
             }
         }))
-        // .pipe(gulp.dest(app.path.build.faviconPath))
-        .pipe(app.gulp.dest(`${app.path.build.faviconPath}`))
+        .pipe(app.gulp.dest(app.path.build.faviconPath))
 		.pipe(app.plugins.browsersync.stream());
-        // .pipe(debug({
-        //     "title": "Favicons"
-        // }));
 }

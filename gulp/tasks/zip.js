@@ -4,11 +4,11 @@ import zipPlugin from "gulp-zip";
 export const zip = () => {
 	del(`./${app.path.rootFolder}.zip`);
 	return app.gulp
-		.src(`${app.path.buildFolder}/**/*.*`, {})
+		.src(`${app.path.buildFolder}/**/*.*`)
 		.pipe(
 			app.plugins.plumber(
 				app.plugins.notify.onError({
-					title: "ZIP",
+					title: "Export ZIP",
 					message: "Error: <%= error.message %>",
 				})
 			)

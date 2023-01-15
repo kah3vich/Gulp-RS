@@ -1,97 +1,83 @@
-@import 'fonts';
-@import 'variable';
-@import 'mixin';
-@import '../components/styles';
+@import "fonts";
+@import "variable";
+@import "mixin";
 
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizelegibility;
-	overflow-wrap: break-word;
-	user-select: text;
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    overflow-wrap: break-word;
+    user-select: text;
 }
 
 body {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
-	background-color: $color-green;
-	font-family: TTNorms, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: $color-green;
+    font-family: TTNorms, sans-serif;
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 ul {
-	list-style: none;
+    list-style: none;
 }
 
 input {
-	margin: 0;
-	border: none;
-	padding: 0;
-	outline: none;
+    margin: 0;
+    border: none;
+    padding: 0;
+    outline: none;
 }
 
 button {
-	border: none;
-	padding: 0;
-	cursor: pointer;
-	outline: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
 }
 
-ol,
-ul {
-	padding-left: 0;
+ol, ul {
+    padding-left: 0;
 }
 
-dl,
-ol,
-ul {
-	margin-top: 0;
-	margin-bottom: 0;
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 p {
-	margin-top: 0;
-	margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5 {
-	margin-top: 0;
-	margin-bottom: 0;
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .containers {
-	width: 100%;
-	max-width: 1440px;
-	margin: 0 auto;
-	padding: 0 165px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .display-n {
-	display: none !important;
+    display: none !important;
 }
 
 opacity-h {
-	opacity: 0 !important;
+    opacity: 0 !important;
 }
+
+@import "../components/styles";

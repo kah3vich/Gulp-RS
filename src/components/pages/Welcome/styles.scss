@@ -1,0 +1,80 @@
+.welcome {
+    width: 100%;
+
+    & .containers {
+        position: relative;
+    }
+
+    &__logo {
+        position: absolute;
+        top: -65%;
+        left: 50%;
+        transform: translate(-50%, -65%);
+    }
+
+    &__content {
+        display: grid;
+        position: relative;
+        z-index: 1;
+        width: 60%;
+        margin: 0 auto;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+    }
+
+    &__item {
+        width: 100%;
+    }
+}
+
+//| Mixins
+
+.welcomeCard {
+    @include flexStyle(flex-start, flex-start, column, 12px);
+
+    width: 100%;
+    min-height: 120px;
+    border: 2px solid $color-yellow;
+    padding: 18px;
+    border-radius: 20px;
+    background-color: $color-green;
+
+    &:hover {
+        & svg {
+            transform: translateX(10px);
+        }
+
+        & p {
+            color: $color-white;
+        }
+    }
+
+    &__title {
+        @include flexStyle(center, flex-start, row);
+
+        & h5 {
+            @include fontStyle(18px, 600, 23px, $color-yellow);
+        }
+
+        & svg {
+            @include transitionStyle;
+
+            fill: $color-yellow;
+            width: 35px;
+            height: 25px;
+        }
+    }
+
+    &__text {
+        @include fontStyle(14px, 500, 19px, $color-black);
+        @include transitionStyle;
+    }
+}
+
+//| Medias
+
+@media screen and (max-width: 550px) {
+    .welcome__content {
+        width: 100%;
+    }
+}

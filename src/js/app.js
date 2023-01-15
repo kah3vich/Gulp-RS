@@ -1,12 +1,17 @@
-import { changeText, titles } from './import/components.js'
+import {
+    Header, Footer, Welcome, Modals,
+} from '../components/scripts.js';
 
-// $(() => {
-let rotateDeg = 360
-$('#active').on('click', () => {
-	$('#gulp').css('transform', `translate(-50%, -50%) rotate(${rotateDeg}deg)`)
-	rotateDeg += 360
-})
-console.log(titles)
-console.log('changeText    ', changeText('man i help you'))
+$(() => {
+    // | Components
 
-// })
+    Header();
+    Footer();
+
+    // | Pages
+
+    Welcome();
+
+    // | Modals
+    Modals();
+});

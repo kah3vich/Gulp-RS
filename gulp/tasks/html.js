@@ -1,8 +1,6 @@
-// import fileInclude from "gulp-file-include";
 import flatten from "gulp-flatten";
 import pug from "gulp-pug";
 import versionNumber from "gulp-version-number";
-// import webpHtmlNosvg from "gulp-webp-html-nosvg";
 
 export const html = () => {
 	return app.gulp
@@ -15,14 +13,12 @@ export const html = () => {
 				})
 			)
 		)
-		// .pipe(fileInclude())
 		.pipe(
 			pug({
 				pretty: true,
 			})
 		)
 		.pipe(app.plugins.replace(/(\.\.\/){1,}/g, "./"))
-		// .pipe(app.plugins.if(app.isBuild, webpHtmlNosvg()))
 		.pipe(
 			app.plugins.if(
 				app.isBuild,
