@@ -16,13 +16,15 @@
 		"linebreak-style": ["error", "windows"],
 		"no-var": "error",
 		"quotes": [2, "single", { "avoidEscape": true }],
-		"indent": ["error", 4, { "ignoredNodes": ["ConditionalExpression"] }],
+		"indent": "off",
 		"no-console": 0,
 		"no-use-before-define": ["error", { "functions": true, "classes": true, "variables": true }],
 		"no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
 		"no-unused-vars": "off",
 		"import/prefer-default-export": "off",
 		"import/extensions": "off",
-		"spaced-comment": "off"
+		"spaced-comment": "off",
+		"no-tabs": "off",
+		"object-curly-newline": "off"
 	}
 }
