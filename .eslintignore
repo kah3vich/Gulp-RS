@@ -2,3 +2,4 @@ gulpfile.js
 webpack.config.js
 babel.config.js
 gulp/**/*.js
+public/js/main.js

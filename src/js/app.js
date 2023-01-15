@@ -1,17 +1,15 @@
-import {
-    Header, Footer, Welcome, Modals,
-} from '../components/scripts.js';
+import { Header, Footer, Welcome, Modals } from '../components/scripts.js';
 
 $(() => {
-    // | Components
+	//| ⭐ Components
 
-    Header();
-    Footer();
+	Header();
+	Footer();
 
-    // | Pages
+	//| 🌟 Pages
 
-    Welcome();
+	Welcome();
 
-    // | Modals
-    Modals();
+	//| 🌠 Modals
+	Modals();
 });

@@ -1,12 +1,12 @@
-//| Components
+//| ⭐ Components
 
 export * from './Header/script.js';
 export * from './Footer/script.js';
 
-//| Pages
+//| 🌟 Pages
 
 export * from './pages/Welcome/script.js';
 
-//| Modals
+//| 🌠 Modals
 
 export * from './Modals/script.js';
