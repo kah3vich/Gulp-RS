@@ -89,6 +89,9 @@
 		"**/*": [
 			"prettier --write --ignore-unknown"
 		],
+		"*.scss": [
+			"stylelint --fix --allow-empty-input"
+		],
 		"*.js": [
 			"eslint --fix"
 		]
