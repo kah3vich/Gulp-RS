@@ -1,1 +1,3 @@
-export const Welcome = () => {};
+export const Welcome = () => {
+    console.log('🌠 Gulp RS')
+};

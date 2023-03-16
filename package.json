@@ -2,7 +2,7 @@
 	"name": "gulp-rs",
 	"description": "What is art ? Like a declaration of love: the consciousness of our dependence on each other. A confession. An unconscious act that none the less reflects the true meaning of life - love and sacrifice. Yojka",
 	"author": "kah3vich",
-	"license": "ISC",
+	"license": "GPL-3.0",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/kah3vich/Gulp-RS"
@@ -87,6 +87,9 @@
 	"lint-staged": {
 		"**/*": [
 			"prettier --write --ignore-unknown"
+		],
+		"*.scss": [
+			"stylelint --fix --allow-empty-input"
 		],
 		"*.js": [
 			"eslint --fix"

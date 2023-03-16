@@ -61,16 +61,3 @@ yarn prettier:check
 ```bash
 yarn prettier:write
 ```
-
-//TODO: fix
-// "lint-staged": {
-// "\*_/_": [
-// "prettier --write --ignore-unknown"
-// ],
-// "_.scss": [
-// "stylelint --fix --allow-empty-input"
-// ],
-// "_.js": [
-// "eslint --fix"
-// ]
-// }

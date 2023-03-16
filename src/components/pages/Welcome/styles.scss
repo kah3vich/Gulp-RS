@@ -49,7 +49,7 @@
 		@include flexStyle(center, flex-start, row);
 
 		& h5 {
-			@include fontStyle($font-medium, $font-semibold, 23px, $color-blue);
+			@include fontStyle($font-middle, $font-semibold, 23px, $color-blue);
 		}
 
 		& img {
