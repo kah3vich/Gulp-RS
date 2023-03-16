@@ -1,39 +1,55 @@
 @mixin fontStyle(
-    $fontSize: 16px,
-    $fontWeight: 400,
-    $lineHeight: 20px,
-    $color: $color-black,
+	$fontSize: 16px,
+	$fontWeight: 400,
+	$lineHeight: 20px,
+	$color: $color-black,
 	$fontStyle: normal
 ) {
-    font-weight: $fontWeight;
-    font-size: $fontSize;
-    line-height: $lineHeight;
-    color: $color;
-    font-style: $fontStyle;
+	font-weight: $fontWeight;
+	font-size: $fontSize;
+	line-height: $lineHeight;
+	color: $color;
+	font-style: $fontStyle;
+}
+
+@mixin gridStyle($gridTemplateColumns: auto, $gridTemplateRows: auto, $gap: 0) {
+	display: grid;
+	grid-template-columns: $gridTemplateColumns;
+	grid-template-rows: $gridTemplateRows;
+	gap: $gap;
 }
 
 @mixin flexStyle(
-    $alignItems: flex-start,
-    $justifyContent: flex-start,
-    $flexDirection: row,
-    $gap: 0,
+	$alignItems: flex-start,
+	$justifyContent: flex-start,
+	$flexDirection: row,
+	$gap: 0,
 	$flexWrap: nowrap
 ) {
-    display: flex;
-    flex-wrap: $flexWrap;
-    flex-direction: $flexDirection;
-    align-items: $alignItems;
-    justify-content: $justifyContent;
-    gap: $gap;
+	display: flex;
+	flex-wrap: $flexWrap;
+	flex-direction: $flexDirection;
+	align-items: $alignItems;
+	justify-content: $justifyContent;
+	gap: $gap;
+}
+
+@mixin absoluteStyle($top: 0, $right: auto, $bottom: auto, $left: 0, $transform: none) {
+	position: absolute;
+	top: $top;
+	left: $left;
+	right: $right;
+	bottom: $bottom;
+	transform: $transform;
 }
 
 @mixin imgFullSize($width: 100%, $height: 100%, $objectFit: cover) {
-    display: block;
-    width: $width;
-    height: $height;
-    object-fit: $objectFit;
+	display: block;
+	width: $width;
+	height: $height;
+	object-fit: $objectFit;
 }
 
 @mixin transitionStyle() {
-    transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }

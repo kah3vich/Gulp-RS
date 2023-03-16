@@ -2,6 +2,5 @@ mixin welcomeCard(href, title, description)
     a(href=href target="_blank").welcomeCard
         .welcomeCard__title 
             h5= title
-            svg
-                use(xlink:href="./svg/sprite.svg#arrow-right")
+            img(src="../../../svg/arrow-right.svg" alt="arrow")
         p.welcomeCard__text= description

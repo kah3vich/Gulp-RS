@@ -8,20 +8,15 @@
 	}
 
 	&__logo {
-		position: absolute;
-		top: -65%;
-		left: 50%;
-		transform: translate(-50%, -65%);
+		@include absoluteStyle(-55%, auto, auto, 50%, translate(-50%, -65%));
 	}
 
 	&__content {
-		display: grid;
 		position: relative;
 		z-index: 1;
 		width: 60%;
 		margin: 0 auto;
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-		gap: 30px;
+		@include gridStyle(repeat(auto-fill, minmax(300px, 1fr)), auto, 30px);
 	}
 
 	&__item {
@@ -36,13 +31,13 @@
 
 	width: 100%;
 	min-height: 120px;
-	border: 2px solid $color-yellow;
+	border: 2px solid $color-blue;
 	padding: 18px;
 	border-radius: 20px;
-	background-color: $color-green;
+	background-color: $color-very-black;
 
 	&:hover {
-		& svg {
+		& img {
 			transform: translateX(10px);
 		}
 
@@ -55,28 +50,38 @@
 		@include flexStyle(center, flex-start, row);
 
 		& h5 {
-			@include fontStyle($font-medium, $font-semibold, 23px, $color-yellow);
+			@include fontStyle($font-medium, $font-semibold, 23px, $color-blue);
 		}
 
-		& svg {
+		& img {
 			@include transitionStyle;
-
-			fill: $color-yellow;
 			width: 35px;
 			height: 25px;
 		}
 	}
 
 	&__text {
-		@include fontStyle($font-small, $font-medium, 19px, $color-black);
+		@include fontStyle($font-small, $font-medium, 19px, $color-blue);
 		@include transitionStyle;
 	}
 }
 
 //| ☔ Medias
 
+@media screen and (max-width: 1050px) {
+	.welcome__logo {
+		top: -25%;
+	}
+}
+
 @media screen and (max-width: 550px) {
 	.welcome__content {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.welcome__content {
+		grid-template-columns: 1fr;
 	}
 }

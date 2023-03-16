@@ -12,7 +12,7 @@ export const favicon = () => {
 				})
 			)
 		)
-        .pipe(favicons({
+        .pipe(app.plugins.if(app.isBuild, favicons({
             icons: {
                 appleIcon: true,
                 favicons: true,
@@ -24,7 +24,7 @@ export const favicon = () => {
                 windows: true,
                 coast: false
             }
-        }))
+        })))
         .pipe(app.gulp.dest(app.path.build.faviconPath))
 		.pipe(app.plugins.browsersync.stream());
 }
