@@ -1,1 +1,3 @@
-export const Modals = () => {};
+export const Modals = () => {
+    console.log('🌠 Modals')
+};

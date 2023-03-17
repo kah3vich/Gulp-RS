@@ -1,5 +1,9 @@
+//! ✅ Constants - variables for general use.
+
+//* 💡 ru - Конфиг видов шрифтов.
+//* 💡 en - Config font types.
 export const fontsConfig = [
-    //| Normal
+    //| Normal Type
 
     {
         name: ['thin', 'hairlire'],
@@ -47,7 +51,7 @@ export const fontsConfig = [
         type: 'normal'
     },
 
-    //| Italic 
+    //| Italic Type
 
     {
         name: ['thinitalic', 'hairlireitalic'],

@@ -7,9 +7,13 @@ import webpackConfig from "../../webpack.config.js";
 webpackConfig.mode = "development";
 webpackConfig.devtool = "source-map";
 
+//! ✅ Favicon
+
 export const js = () => {
     return gulp
         .src(app.path.src.js)
+        //* 💡 ru - сообщение при ошибки в текущей функции.
+        //* 💡 en - message for errors in the current function.
         .pipe(
 			app.plugins.plumber(
 				app.plugins.notify.onError({
@@ -18,6 +22,8 @@ export const js = () => {
 				})
 			)
 		)
+		//* 💡 ru - 
+		//* 💡 en - 
         .pipe(webpackStream(webpackConfig), webpack)
 		.pipe(app.gulp.dest(app.path.build.js))
 		.pipe(app.plugins.browsersync.stream());

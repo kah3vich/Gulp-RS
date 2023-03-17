@@ -1,12 +1,46 @@
 {
 	"name": "gulp-rs",
-	"description": "What is art ? Like a declaration of love: the consciousness of our dependence on each other. A confession. An unconscious act that none the less reflects the true meaning of life - love and sacrifice. Yojka",
+	"description": "One of the current and actively developing assemblies for layout Gulp. With support for current package versions and custom plugin improvements.",
 	"author": "kah3vich",
 	"license": "GPL-3.0",
+	"version": "0.0.1",
+	"main": "./gulpfile.js",
+	"preview": false,
+	"galleryBanner": {
+		"color": "#20232a",
+		"theme": "dark"
+	},
+	"categories": ["Other", "Visualization"],
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/kah3vich/Gulp-RS"
 	},
+	"bugs": {
+		"url": "https://github.com/kah3vich/Gulp-RS/issues"
+	},
+	"homepage": "https://kah3vich.github.io/Gulp-RS/public/index.html",
+	"icon": "https://raw.githubusercontent.com/kah3vich/Gulp-RS/master/assets/svg/logo.svg",
+	"keywords": [
+		"gulp",
+		"set",
+		"zip",
+		"github",
+		"setup",
+		"plugin",
+		"modular",
+		"configurable",
+		"build",
+		"clean",
+		"html",
+		"css",
+		"stylus",
+		"sass",
+		"javascript",
+		"images",
+		"fonts",
+		"browserify",
+		"webpack"
+	],
 	"scripts": {
 		"start": "gulp",
 		"build": "gulp build --build",

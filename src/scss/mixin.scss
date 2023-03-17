@@ -1,3 +1,6 @@
+//* 💡 ru - 
+//* 💡 en - 
+
 @mixin fontStyle(
 	$fontSize: 16px,
 	$fontWeight: 400,
@@ -12,12 +15,18 @@
 	font-style: $fontStyle;
 }
 
+//* 💡 ru - 
+//* 💡 en - 
+
 @mixin gridStyle($gridTemplateColumns: auto, $gridTemplateRows: auto, $gap: 0) {
 	display: grid;
 	grid-template-columns: $gridTemplateColumns;
 	grid-template-rows: $gridTemplateRows;
 	gap: $gap;
 }
+
+//* 💡 ru - 
+//* 💡 en - 
 
 @mixin flexStyle(
 	$alignItems: flex-start,
@@ -34,6 +43,9 @@
 	gap: $gap;
 }
 
+//* 💡 ru - 
+//* 💡 en - 
+
 @mixin absoluteStyle($top: 0, $right: auto, $bottom: auto, $left: 0, $transform: none) {
 	position: absolute;
 	top: $top;
@@ -43,12 +55,18 @@
 	transform: $transform;
 }
 
+//* 💡 ru - 
+//* 💡 en - 
+
 @mixin imgFullSize($width: 100%, $height: 100%, $objectFit: cover) {
 	display: block;
 	width: $width;
 	height: $height;
 	object-fit: $objectFit;
 }
+
+//* 💡 ru - 
+//* 💡 en - 
 
 @mixin transitionStyle() {
 	transition: all 0.5s ease;

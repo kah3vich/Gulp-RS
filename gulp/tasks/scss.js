@@ -9,9 +9,13 @@ import defSass from "sass";
 
 const sass = gulpSass(defSass);
 
+//! ✅ SCSS - 
+
 export const scss = () => {
 	return app.gulp
 		.src(app.path.src.scss, { sourcemaps: app.isDev })
+        //* 💡 ru - сообщение при ошибки в текущей функции.
+        //* 💡 en - message for errors in the current function.
 		.pipe(
 			app.plugins.plumber(
 				app.plugins.notify.onError({
@@ -20,14 +24,24 @@ export const scss = () => {
 				})
 			)
 		)
+		//* 💡 ru - 
+		//* 💡 en - 
 		.pipe(sourcemaps.init())
+		//* 💡 ru - 
+		//* 💡 en - 
 		.pipe(app.plugins.replace(/(\.\.\/){1,}/g, "./../"))
+		//* 💡 ru - 
+		//* 💡 en - 
 		.pipe(
 			sass({
 				outputStyle: "expanded",
 			})
 		)
+		//* 💡 ru - 
+		//* 💡 en - 
 		.pipe(app.plugins.if(app.isBuild, groupCssMediaQueries()))
+		//* 💡 ru - 
+		//* 💡 en - 
 		.pipe(
 			app.plugins.if(
 				app.isBuild,
@@ -41,14 +55,22 @@ export const scss = () => {
 				})
 			)
 		)
+		//* 💡 ru - 
+		//* 💡 en - 
 		.pipe(csscomb())
 		.pipe(app.gulp.dest(app.path.build.scss))
+		//* 💡 ru - 
+		//* 💡 en - 
 		.pipe(app.plugins.if(app.isBuild, cleanCss()))
+		//* 💡 ru - 
+		//* 💡 en - 
 		.pipe(
 			rename({
 				extname: ".min.css",
 			})
 		)
+		//* 💡 ru - 
+		//* 💡 en - 
 		.pipe(sourcemaps.write("./"))
 		.pipe(app.gulp.dest(app.path.build.scss))
 		.pipe(app.plugins.browsersync.stream());
