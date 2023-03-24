@@ -1,22 +1,25 @@
 import fs from 'fs';
+import rimraf from 'rimraf'
 
-const capitalizeFirstLetter = (string) => {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
+import {
+    capitalizeFirstLetter,
+    createComponentDirWithFiles,
+    getAllDirectories,
+} from './function.js';
 
-export const createComponent = (name, path) => {
+export const createComponent = (name, path = './') => {
     if (!name) {
         console.log('❌ Name component is empty')
         return
     }
 
-    if (!path) {
-        console.log('❌ Path component is empty')
-        return
-    }
-
     const rootDir = './src/components';
-    const pathForComponent = path.replace('./', '/')
+    const pathForComponent = path.replace('./', '/').map((p) => {
+        if (!(p.split('').at(-1) === '/')) {
+            return `${el}/`
+        }
+        return el
+    })
     const nameComponent = capitalizeFirstLetter(name)
 
     if (pathForComponent.length > 2) {
@@ -31,25 +34,25 @@ export const createComponent = (name, path) => {
         fs.mkdirSync(resultPathForComponent);
     }
 
-    const filePathJs = resultPathForComponent + '/script.js'
-    const fileContentJs = `export const ${nameComponent} = () => {};`;
-
-    fs.writeFile(filePathJs, fileContentJs, () => {}); 
-    
-    const filePathPug = resultPathForComponent + '/index.pug'
-    const fileContentPug = `section.${nameComponent.toLowerCase()}`;
-
-    fs.writeFile(filePathPug, fileContentPug, () => {});
-
-    const filePathPugMixin = resultPathForComponent + '/mixin.pug'
-    const fileContentPugMixin = ``;
-
-    fs.writeFile(filePathPugMixin, fileContentPugMixin, () => {}); 
-
-    const filePathSCSS = resultPathForComponent + '/styles.scss'
-    const fileContentSCSS = '//| 💧 Styles \n\n.' + nameComponent.toLowerCase() + ' {\n}\n\n//| 🌂 Mixins\n\n//| ☔ Medias';
-
-    fs.writeFile(filePathSCSS, fileContentSCSS, () => {}); 
+    createComponentDirWithFiles(nameComponent, resultPathForComponent)
 
     console.log(`✅ Done - Create component to "${nameComponent}"`);
+}
+
+export const removeComponent = (name) => {
+    if (!name) {
+        console.log('❌ Name component is empty')
+        return
+    }
+
+    const arrDirection = getAllDirectories('./src/components')
+    let path = ''
+
+    arrDirection.forEach((dir) => {
+        if (dir.includes(name)) {
+            path = dir
+        }
+    })
+
+    rimraf.sync('./' + path);
 }

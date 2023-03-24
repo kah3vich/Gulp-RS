@@ -4,3 +4,4 @@ babel.config.js
 gulp/**/*.js
 public/js/main.js
 */*
+test.js

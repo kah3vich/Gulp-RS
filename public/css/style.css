@@ -1,4 +1,130 @@
 @font-face {
+	font-family : TT NormsTTNorms;
+	font-display : swap;
+	src : url("../fonts/TT NormsTTNorms-Black.woff") format("woff"), url("../fonts/TT NormsTTNorms-Black.woff2") format("woff2");
+	font-weight : 900;
+	font-style : normal;
+}
+@font-face {
+	font-family : TT NormsTTNorms;
+	font-display : swap;
+	src : url("../fonts/TT NormsTTNorms-ExtraBold.woff") format("woff"), url("../fonts/TT NormsTTNorms-ExtraBold.woff2") format("woff2");
+	font-weight : 800;
+	font-style : normal;
+}
+@font-face {
+	font-family : TT NormsTTNorms;
+	font-display : swap;
+	src : url("../fonts/TT NormsTTNorms-ExtraBoldItalic.woff") format("woff"), url("../fonts/TT NormsTTNorms-ExtraBoldItalic.woff2") format("woff2");
+	font-weight : 800;
+	font-style : italic;
+}
+@font-face {
+	font-family : TT NormsTTNorms;
+	font-display : swap;
+	src : url("../fonts/TT NormsTTNorms-ExtraLight.woff") format("woff"), url("../fonts/TT NormsTTNorms-ExtraLight.woff2") format("woff2");
+	font-weight : 200;
+	font-style : normal;
+}
+@font-face {
+	font-family : TT NormsTTNorms;
+	font-display : swap;
+	src : url("../fonts/TT NormsTTNorms-ExtraLightItalic.woff") format("woff"), url("../fonts/TT NormsTTNorms-ExtraLightItalic.woff2") format("woff2");
+	font-weight : 200;
+	font-style : italic;
+}
+@font-face {
+	font-family : TT NormsTTNorms;
+	font-display : swap;
+	src : url("../fonts/TT NormsTTNorms-Heavy.woff") format("woff"), url("../fonts/TT NormsTTNorms-Heavy.woff2") format("woff2");
+	font-weight : 900;
+	font-style : normal;
+}
+@font-face {
+	font-family : TT NormsTTNorms;
+	font-display : swap;
+	src : url("../fonts/TT NormsTTNorms-HeavyItalic.woff") format("woff"), url("../fonts/TT NormsTTNorms-HeavyItalic.woff2") format("woff2");
+	font-weight : 900;
+	font-style : italic;
+}
+@font-face {
+	font-family : TT NormsTTNorms;
+	font-display : swap;
+	src : url("../fonts/TT NormsTTNorms-Italic.woff") format("woff"), url("../fonts/TT NormsTTNorms-Italic.woff2") format("woff2");
+	font-weight : 400;
+	font-style : italic;
+}
+@font-face {
+	font-family : TT NormsTTNorms;
+	font-display : swap;
+	src : url("../fonts/TT NormsTTNorms-Light.woff") format("woff"), url("../fonts/TT NormsTTNorms-Light.woff2") format("woff2");
+	font-weight : 300;
+	font-style : normal;
+}
+@font-face {
+	font-family : TT NormsTTNorms;
+	font-display : swap;
+	src : url("../fonts/TT NormsTTNorms-LightItalic.woff") format("woff"), url("../fonts/TT NormsTTNorms-LightItalic.woff2") format("woff2");
+	font-weight : 300;
+	font-style : italic;
+}
+@font-face {
+	font-family : TT NormsTTNorms;
+	font-display : swap;
+	src : url("../fonts/TT NormsTTNorms-Medium.woff") format("woff"), url("../fonts/TT NormsTTNorms-Medium.woff2") format("woff2");
+	font-weight : 500;
+	font-style : normal;
+}
+@font-face {
+	font-family : TT NormsTTNorms;
+	font-display : swap;
+	src : url("../fonts/TT NormsTTNorms-MediumItalic.woff") format("woff"), url("../fonts/TT NormsTTNorms-MediumItalic.woff2") format("woff2");
+	font-weight : 500;
+	font-style : italic;
+}
+@font-face {
+	font-family : TT NormsTTNorms;
+	font-display : swap;
+	src : url("../fonts/TT NormsTTNorms-Regular.woff") format("woff"), url("../fonts/TT NormsTTNorms-Regular.woff2") format("woff2");
+	font-weight : 400;
+	font-style : normal;
+}
+@font-face {
+	font-family : TT NormsTTNorms;
+	font-display : swap;
+	src : url("../fonts/TT NormsTTNorms-Thin.woff") format("woff"), url("../fonts/TT NormsTTNorms-Thin.woff2") format("woff2");
+	font-weight : 100;
+	font-style : normal;
+}
+@font-face {
+	font-family : TT NormsTTNorms;
+	font-display : swap;
+	src : url("../fonts/TT NormsTTNorms-ThinItalic.woff") format("woff"), url("../fonts/TT NormsTTNorms-ThinItalic.woff2") format("woff2");
+	font-weight : 100;
+	font-style : italic;
+}
+@font-face {
+	font-family : TT NormsTTNorms;
+	font-display : swap;
+	src : url("../fonts/TT NormsTTNorms-BoldItalic.woff") format("woff"), url("../fonts/TT NormsTTNorms-BoldItalic.woff2") format("woff2");
+	font-weight : 700;
+	font-style : italic;
+}
+@font-face {
+	font-family : TT NormsTTNorms;
+	font-display : swap;
+	src : url("../fonts/TT NormsTTNorms-BlackItalic.woff") format("woff"), url("../fonts/TT NormsTTNorms-BlackItalic.woff2") format("woff2");
+	font-weight : 900;
+	font-style : italic;
+}
+@font-face {
+	font-family : TT NormsTTNorms;
+	font-display : swap;
+	src : url("../fonts/TT NormsTTNorms-Bold.woff") format("woff"), url("../fonts/TT NormsTTNorms-Bold.woff2") format("woff2");
+	font-weight : 700;
+	font-style : normal;
+}
+@font-face {
 	font-family : TTNorms;
 	font-display : swap;
 	src : url("../fonts/TTNorms-Black.woff") format("woff"), url("../fonts/TTNorms-Black.woff2") format("woff2");
@@ -22,13 +148,6 @@
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
-	src : url("../fonts/TTNorms-ExtraBold.woff") format("woff"), url("../fonts/TTNorms-ExtraBold.woff2") format("woff2");
-	font-weight : 800;
-	font-style : normal;
-}
-@font-face {
-	font-family : TTNorms;
-	font-display : swap;
 	src : url("../fonts/TTNorms-BoldItalic.woff") format("woff"), url("../fonts/TTNorms-BoldItalic.woff2") format("woff2");
 	font-weight : 700;
 	font-style : italic;
@@ -36,8 +155,8 @@
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
-	src : url("../fonts/TTNorms-Heavy.woff") format("woff"), url("../fonts/TTNorms-Heavy.woff2") format("woff2");
-	font-weight : 900;
+	src : url("../fonts/TTNorms-ExtraBold.woff") format("woff"), url("../fonts/TTNorms-ExtraBold.woff2") format("woff2");
+	font-weight : 800;
 	font-style : normal;
 }
 @font-face {
@@ -50,6 +169,13 @@
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
+	src : url("../fonts/TTNorms-ExtraLight.woff") format("woff"), url("../fonts/TTNorms-ExtraLight.woff2") format("woff2");
+	font-weight : 200;
+	font-style : normal;
+}
+@font-face {
+	font-family : TTNorms;
+	font-display : swap;
 	src : url("../fonts/TTNorms-ExtraLightItalic.woff") format("woff"), url("../fonts/TTNorms-ExtraLightItalic.woff2") format("woff2");
 	font-weight : 200;
 	font-style : italic;
@@ -57,9 +183,9 @@
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
-	src : url("../fonts/TTNorms-Italic.woff") format("woff"), url("../fonts/TTNorms-Italic.woff2") format("woff2");
-	font-weight : 400;
-	font-style : italic;
+	src : url("../fonts/TTNorms-Heavy.woff") format("woff"), url("../fonts/TTNorms-Heavy.woff2") format("woff2");
+	font-weight : 900;
+	font-style : normal;
 }
 @font-face {
 	font-family : TTNorms;
@@ -71,9 +197,9 @@
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
-	src : url("../fonts/TTNorms-ExtraLight.woff") format("woff"), url("../fonts/TTNorms-ExtraLight.woff2") format("woff2");
-	font-weight : 200;
-	font-style : normal;
+	src : url("../fonts/TTNorms-Italic.woff") format("woff"), url("../fonts/TTNorms-Italic.woff2") format("woff2");
+	font-weight : 400;
+	font-style : italic;
 }
 @font-face {
 	font-family : TTNorms;
@@ -106,8 +232,8 @@
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
-	src : url("../fonts/TTNorms-Thin.woff") format("woff"), url("../fonts/TTNorms-Thin.woff2") format("woff2");
-	font-weight : 100;
+	src : url("../fonts/TTNorms-Regular.woff") format("woff"), url("../fonts/TTNorms-Regular.woff2") format("woff2");
+	font-weight : 400;
 	font-style : normal;
 }
 @font-face {
@@ -120,8 +246,8 @@
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
-	src : url("../fonts/TTNorms-Regular.woff") format("woff"), url("../fonts/TTNorms-Regular.woff2") format("woff2");
-	font-weight : 400;
+	src : url("../fonts/TTNorms-Thin.woff") format("woff"), url("../fonts/TTNorms-Thin.woff2") format("woff2");
+	font-weight : 100;
 	font-style : normal;
 }
 *

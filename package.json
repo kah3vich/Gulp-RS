@@ -10,6 +10,7 @@
 	"scripts": {
 		"start": "gulp",
 		"component:create": "node ./custom/command.js component-create",
+		"component:remove": "node ./custom/command.js component-remove",
 		"build": "gulp build --build",
 		"build:zip": "gulp deployZIP --build",
 		"lint:script": "npx eslint \"src/**/*.js\"",
@@ -77,6 +78,7 @@
 		"stylelint-selector-bem-pattern": "^2.1.1"
 	},
 	"dependencies": {
+		"rimraf": "^4.4.1",
 		"webpack": "^5.65.0",
 		"webpack-stream": "^7.0.0",
 		"yargs": "^17.7.1"
@@ -87,8 +89,14 @@
 		}
 	},
 	"lint-staged": {
-		"**/*": ["prettier --write --ignore-unknown"],
-		"*.scss": ["stylelint --fix --allow-empty-input"],
-		"*.js": ["eslint --fix"]
+		"**/*": [
+			"prettier --write --ignore-unknown"
+		],
+		"*.scss": [
+			"stylelint --fix --allow-empty-input"
+		],
+		"*.js": [
+			"eslint --fix"
+		]
 	}
 }
