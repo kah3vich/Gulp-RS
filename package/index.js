@@ -12,4 +12,4 @@ class CustomButton {
 	}
 }
 
-export { CustomButton };
+module.exports = CustomButton
