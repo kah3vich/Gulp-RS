@@ -1,9 +1,16 @@
-'use strict';
+class CustomButton {
+	constructor(id, padding, color) {
+		this.id = id;
+		this.padding = padding;
+		this.color = color;
+	}
 
-function buttonCustom(padding = '10px', color = 'red') {
-	const button = document.getElementById('custom');
-	button.style.padding = padding;
-	button.style.backgroundColor = color;
+	render() {
+		const button = document.getElementById(this.id);
+		button.style.padding = this.padding;
+		button.style.backgroundColor = this.color;
+		return button;
+	}
 }
 
-module.exports = buttonCustom;
+module.exports = CustomButton;
