@@ -1,8 +1,20 @@
 import * as nodePath from "path";
+
+//! ✅ Path - paths for public use.
+
+//* 💡 ru - переменная с корневой папкой проект.
+//* 💡 en - variable with root folder project.
+
 const rootFolder = nodePath.basename(nodePath.resolve());
+
+//* 💡 ru - пути к папкам с исходника и с собранным проектом.
+//* 💡 en - paths to folders from the source and with the assembled project.
 
 const buildFolder = `./public`;
 const srcFolder = `./src`;
+
+//* 💡 ru - пути к различным разделам в текущем проекте.
+//* 💡 en - paths to different sections in the current project.
 
 export const path = {
 	build: {

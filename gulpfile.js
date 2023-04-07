@@ -1,15 +1,6 @@
 import gulp from 'gulp'
 import { path } from './gulp/config/path.js'
 import { plugins } from './gulp/config/plugins.js'
-
-global.app = {
-	isBuild: process.argv.includes('--build'),
-	idDev: !process.argv.includes('--build'),
-	path: path,
-	gulp: gulp,
-	plugins: plugins
-}
-
 import { favicon } from './gulp/tasks/favicons.js'
 import { fontsStyle, otfToTtf, ttfToWoff } from './gulp/tasks/fonts.js'
 import { html } from './gulp/tasks/html.js'
@@ -20,6 +11,16 @@ import { scss } from './gulp/tasks/scss.js'
 import { server } from './gulp/tasks/server.js'
 import { svg } from './gulp/tasks/svg.js'
 import { zip } from './gulp/tasks/zip.js'
+
+//! ✅ Gulp - 
+
+global.app = {
+	isBuild: process.argv.includes('--build'),
+	idDev: !process.argv.includes('--build'),
+	path: path,
+	gulp: gulp,
+	plugins: plugins
+}
 
 const watcher = () => {
 	gulp.watch(path.watch.html, html)

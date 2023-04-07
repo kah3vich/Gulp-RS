@@ -5,6 +5,8 @@ import browsersync from "browser-sync";
 import newer from "gulp-newer";
 import ifPlugin from "gulp-if";
 
+//! ✅ Plugin - plugin object Gulp.
+
 export const plugins = {
 	replace: replace,
 	plumber: plumber,

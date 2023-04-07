@@ -1,1 +1,3 @@
-export const Header = () => {};
+export const Header = () => {
+    console.log('🌠 Header')
+};
