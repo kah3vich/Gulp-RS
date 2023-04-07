@@ -232,6 +232,14 @@ opacity-h {
 	opacity : 0 !important;
 }
 
+.header {
+	width : 100%;
+}
+
+.footer {
+	width : 100%;
+}
+
 .welcome {
 	width : 100%;
 }
@@ -323,4 +331,7 @@ opacity-h {
 	.welcome__content {
 		grid-template-columns : 1fr;
 	}
+}
+.modals {
+	width : 100%;
 }
