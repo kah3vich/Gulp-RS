@@ -1,6 +1,15 @@
-import { CustomButton } from './CustomButton';
-import { disableButton, enableButton } from './utils';
+class CustomButton {
+	constructor(padding, color) {
+		this.padding = padding;
+		this.color = color;
+	}
 
-import './styles.css';
+	render() {
+		const button = document.createElement('button');
+		button.style.padding = this.padding;
+		button.style.backgroundColor = this.color;
+		return button;
+	}
+}
 
-export { CustomButton, disableButton, enableButton };
+module.exports = CustomButton;
