@@ -1,4 +1,4 @@
-import { Header, Footer, Welcome, Modals } from '../components/scripts.js';
+import { Footer, Header, Modals, Welcome } from '../components/scripts.js';
 
 $(() => {
 	//| ⭐ Components

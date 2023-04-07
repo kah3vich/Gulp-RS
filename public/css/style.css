@@ -5,31 +5,6 @@
 	font-weight : 900;
 	font-style : normal;
 }
-
-@font-face {
-	font-family : TTNorms;
-	font-display : swap;
-	src : url("../fonts/TTNorms-Bold.woff") format("woff"), url("../fonts/TTNorms-Bold.woff2") format("woff2");
-	font-weight : 700;
-	font-style : normal;
-}
-
-@font-face {
-	font-family : TTNorms;
-	font-display : swap;
-	src : url("../fonts/TTNorms-ExtraBold.woff") format("woff"), url("../fonts/TTNorms-ExtraBold.woff2") format("woff2");
-	font-weight : 800;
-	font-style : normal;
-}
-
-@font-face {
-	font-family : TTNorms;
-	font-display : swap;
-	src : url("../fonts/TTNorms-BoldItalic.woff") format("woff"), url("../fonts/TTNorms-BoldItalic.woff2") format("woff2");
-	font-weight : 700;
-	font-style : italic;
-}
-
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
@@ -37,15 +12,6 @@
 	font-weight : 900;
 	font-style : italic;
 }
-
-@font-face {
-	font-family : TTNorms;
-	font-display : swap;
-	src : url("../fonts/TTNorms-ExtraLight.woff") format("woff"), url("../fonts/TTNorms-ExtraLight.woff2") format("woff2");
-	font-weight : 200;
-	font-style : normal;
-}
-
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
@@ -53,7 +19,27 @@
 	font-weight : 800;
 	font-style : italic;
 }
-
+@font-face {
+	font-family : TTNorms;
+	font-display : swap;
+	src : url("../fonts/TTNorms-BoldItalic.woff") format("woff"), url("../fonts/TTNorms-BoldItalic.woff2") format("woff2");
+	font-weight : 700;
+	font-style : italic;
+}
+@font-face {
+	font-family : TTNorms;
+	font-display : swap;
+	src : url("../fonts/TTNorms-ExtraLight.woff") format("woff"), url("../fonts/TTNorms-ExtraLight.woff2") format("woff2");
+	font-weight : 200;
+	font-style : normal;
+}
+@font-face {
+	font-family : TTNorms;
+	font-display : swap;
+	src : url("../fonts/TTNorms-Bold.woff") format("woff"), url("../fonts/TTNorms-Bold.woff2") format("woff2");
+	font-weight : 700;
+	font-style : normal;
+}
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
@@ -61,15 +47,13 @@
 	font-weight : 200;
 	font-style : italic;
 }
-
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
-	src : url("../fonts/TTNorms-Heavy.woff") format("woff"), url("../fonts/TTNorms-Heavy.woff2") format("woff2");
-	font-weight : 900;
+	src : url("../fonts/TTNorms-ExtraBold.woff") format("woff"), url("../fonts/TTNorms-ExtraBold.woff2") format("woff2");
+	font-weight : 800;
 	font-style : normal;
 }
-
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
@@ -77,7 +61,6 @@
 	font-weight : 400;
 	font-style : italic;
 }
-
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
@@ -85,15 +68,6 @@
 	font-weight : 900;
 	font-style : italic;
 }
-
-@font-face {
-	font-family : TTNorms;
-	font-display : swap;
-	src : url("../fonts/TTNorms-Light.woff") format("woff"), url("../fonts/TTNorms-Light.woff2") format("woff2");
-	font-weight : 300;
-	font-style : normal;
-}
-
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
@@ -101,23 +75,20 @@
 	font-weight : 300;
 	font-style : italic;
 }
-
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
-	src : url("../fonts/TTNorms-Medium.woff") format("woff"), url("../fonts/TTNorms-Medium.woff2") format("woff2");
-	font-weight : 500;
+	src : url("../fonts/TTNorms-Heavy.woff") format("woff"), url("../fonts/TTNorms-Heavy.woff2") format("woff2");
+	font-weight : 900;
 	font-style : normal;
 }
-
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
-	src : url("../fonts/TTNorms-Regular.woff") format("woff"), url("../fonts/TTNorms-Regular.woff2") format("woff2");
-	font-weight : 400;
+	src : url("../fonts/TTNorms-Light.woff") format("woff"), url("../fonts/TTNorms-Light.woff2") format("woff2");
+	font-weight : 300;
 	font-style : normal;
 }
-
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
@@ -125,7 +96,6 @@
 	font-weight : 500;
 	font-style : italic;
 }
-
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
@@ -133,7 +103,20 @@
 	font-weight : 100;
 	font-style : italic;
 }
-
+@font-face {
+	font-family : TTNorms;
+	font-display : swap;
+	src : url("../fonts/TTNorms-Medium.woff") format("woff"), url("../fonts/TTNorms-Medium.woff2") format("woff2");
+	font-weight : 500;
+	font-style : normal;
+}
+@font-face {
+	font-family : TTNorms;
+	font-display : swap;
+	src : url("../fonts/TTNorms-Regular.woff") format("woff"), url("../fonts/TTNorms-Regular.woff2") format("woff2");
+	font-weight : 400;
+	font-style : normal;
+}
 @font-face {
 	font-family : TTNorms;
 	font-display : swap;
@@ -141,34 +124,23 @@
 	font-weight : 100;
 	font-style : normal;
 }
-
 *
 ,
 *::before
 ,
 *::after {
-	-webkit-box-sizing : border-box;
-	        box-sizing : border-box;
+	box-sizing : border-box;
 	margin : 0;
 	padding : 0;
 	-webkit-font-smoothing : antialiased;
 	text-rendering : optimizelegibility;
 	overflow-wrap : break-word;
-	-webkit-user-select : text;
-	   -moz-user-select : text;
-	    -ms-user-select : text;
-	        user-select : text;
+	user-select : text;
 }
 
 body {
-	display : -webkit-box;
-	display : -ms-flexbox;
 	display : flex;
-	-webkit-box-align : center;
-	-ms-flex-align : center;
 	align-items : center;
-	-webkit-box-pack : center;
-	-ms-flex-pack : center;
 	justify-content : center;
 	position : relative;
 	width : 100%;
@@ -263,54 +235,36 @@ opacity-h {
 .welcome {
 	width : 100%;
 }
-
 .welcome .containers {
 	position : relative;
 }
-
 .welcome__logo {
 	position : absolute;
 	top : -55%;
 	left : 50%;
 	right : auto;
 	bottom : auto;
-	-webkit-transform : translate(-50%, -65%);
-	    -ms-transform : translate(-50%, -65%);
-	        transform : translate(-50%, -65%);
+	transform : translate(-50%, -65%);
 }
-
 .welcome__content {
 	position : relative;
 	z-index : 1;
 	width : 60%;
 	margin : 0 auto;
-	display : -ms-grid;
-	display :     grid;
+	display : grid;
 	grid-template-columns : repeat(auto-fill, minmax(300px, 1fr));
-	-ms-grid-rows : auto;
 	grid-template-rows : auto;
 	gap : 30px;
 }
-
 .welcome__item {
 	width : 100%;
 }
 
 .welcomeCard {
-	display : -webkit-box;
-	display : -ms-flexbox;
 	display : flex;
-	-ms-flex-wrap : nowrap;
-	    flex-wrap : nowrap;
-	-webkit-box-orient : vertical;
-	-webkit-box-direction : normal;
-	-ms-flex-direction : column;
-	    flex-direction : column;
-	-webkit-box-align : start;
-	-ms-flex-align : start;
+	flex-wrap : nowrap;
+	flex-direction : column;
 	align-items : flex-start;
-	-webkit-box-pack : start;
-	-ms-flex-pack : start;
 	justify-content : flex-start;
 	gap : 12px;
 	width : 100%;
@@ -320,36 +274,20 @@ opacity-h {
 	border-radius : 20px;
 	background-color : #20232a;
 }
-
 .welcomeCard:hover img {
-	-webkit-transform : translateX(10px);
-	    -ms-transform : translateX(10px);
-	        transform : translateX(10px);
+	transform : translateX(10px);
 }
-
 .welcomeCard:hover p {
 	color : #ffffff;
 }
-
 .welcomeCard__title {
-	display : -webkit-box;
-	display : -ms-flexbox;
 	display : flex;
-	-ms-flex-wrap : nowrap;
-	    flex-wrap : nowrap;
-	-webkit-box-orient : horizontal;
-	-webkit-box-direction : normal;
-	-ms-flex-direction : row;
-	    flex-direction : row;
-	-webkit-box-align : center;
-	-ms-flex-align : center;
+	flex-wrap : nowrap;
+	flex-direction : row;
 	align-items : center;
-	-webkit-box-pack : start;
-	-ms-flex-pack : start;
 	justify-content : flex-start;
 	gap : 0;
 }
-
 .welcomeCard__title h5 {
 	font-weight : 600;
 	font-size : 16px;
@@ -357,24 +295,18 @@ opacity-h {
 	color : #61dafb;
 	font-style : normal;
 }
-
 .welcomeCard__title img {
-	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
-	        transition : all 0.5s ease;
+	transition : all 0.5s ease;
 	width : 35px;
 	height : 25px;
 }
-
 .welcomeCard__text {
 	font-weight : 500;
 	font-size : 14px;
 	line-height : 19px;
 	color : #61dafb;
 	font-style : normal;
-	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
-	        transition : all 0.5s ease;
+	transition : all 0.5s ease;
 }
 
 @media screen and (max-width: 1050px) {
@@ -382,16 +314,13 @@ opacity-h {
 		top : -25%;
 	}
 }
-
 @media screen and (max-width: 550px) {
 	.welcome__content {
 		width : 100%;
 	}
 }
-
 @media screen and (max-width: 450px) {
 	.welcome__content {
-		-ms-grid-columns : 1fr;
 		grid-template-columns : 1fr;
 	}
 }
