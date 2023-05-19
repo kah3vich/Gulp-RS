@@ -1,12 +1,12 @@
 const webpackConfig = {
 	entry: {
-		main: './src/js/app.js'
+		main: './src/js/app.js',
 	},
 
 	output: {
 		filename: '[name].js',
 		chunkFilename: '[name].js',
-		publicPath: '/'
+		publicPath: '/',
 	},
 
 	optimization: {
@@ -17,10 +17,10 @@ const webpackConfig = {
 					test: /node_modules/,
 					chunks: 'initial',
 					name: 'vendor',
-					enforce: true
-				}
-			}
-		}
+					enforce: true,
+				},
+			},
+		},
 	},
 
 	module: {
@@ -31,12 +31,12 @@ const webpackConfig = {
 				use: {
 					loader: 'babel-loader',
 					options: {
-						presets: [['@babel/preset-env', { modules: false }]]
-					}
-				}
-			}
-		]
-	}
-}
+						presets: [['@babel/preset-env', { modules: false }]],
+					},
+				},
+			},
+		],
+	},
+};
 
-export default webpackConfig
+export default webpackConfig;

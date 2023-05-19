@@ -5,5 +5,7 @@ export const server = () => {
 		},
 		notify: false,
 		port: 8080,
+		open: false,
+		browser: 'google chrome',
 	});
 };

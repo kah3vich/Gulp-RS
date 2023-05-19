@@ -26,38 +26,26 @@ yarn build
 yarn build:zip
 ```
 
-### ESLint script check:
+### ESLint script fix:
 
 ```bash
 yarn lint:script
 ```
 
-### ESLint script fix:
-
-```bash
-yarn lint:script-fix
-```
-
-### StyleLint style check:
-
-```bash
-yarn lint:styles
-```
-
-### StyleLint style fix:
-
-```bash
-yarn lint:styles-fix
-```
-
-### Prettier code check:
-
-```bash
-yarn prettier:check
-```
-
-### Prettier code fix:
+### Prettier code write:
 
 ```bash
 yarn prettier:write
+```
+
+### Create component:
+
+```bash
+yarn component:create <Name Component> <Path from src/component/>
+```
+
+### Create remove:
+
+```bash
+yarn component:remove <Name Component> <Path from src/component/>
 ```

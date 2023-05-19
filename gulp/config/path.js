@@ -1,8 +1,9 @@
-import * as nodePath from "path";
+import * as nodePath from 'path';
+
 const rootFolder = nodePath.basename(nodePath.resolve());
 
-const buildFolder = `./public`;
-const srcFolder = `./src`;
+const buildFolder = './public';
+const srcFolder = './src';
 
 export const path = {
 	build: {
@@ -41,7 +42,7 @@ export const path = {
 	},
 	clean: buildFolder,
 	cleanFontStyle: `${srcFolder}/scss/fonts.scss`,
-	buildFolder: buildFolder,
-	srcFolder: srcFolder,
-	rootFolder: rootFolder,
+	buildFolder,
+	srcFolder,
+	rootFolder,
 };

@@ -21,17 +21,17 @@ import { zip } from './gulp/tasks/zip.js';
 global.app = {
 	isBuild: process.argv.includes('--build'),
 	idDev: !process.argv.includes('--build'),
-	path: path,
-	gulp: gulp,
-	plugins: plugins,
+	path,
+	gulp,
+	plugins,
 };
 
 const watcher = () => {
+	gulp.watch(path.watch.js, js);
+	gulp.watch(path.watch.svg, svg);
 	gulp.watch(path.watch.html, html);
 	gulp.watch(path.watch.scss, scss);
-	gulp.watch(path.watch.js, js);
 	gulp.watch(path.watch.image, image);
-	gulp.watch(path.watch.svg, svg);
 	gulp.watch(path.watch.faviconPath, favicon);
 };
 

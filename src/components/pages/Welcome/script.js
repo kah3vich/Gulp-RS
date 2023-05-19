@@ -1,3 +1,3 @@
 export const Welcome = () => {
-    console.log('🌠 Gulp RS')
+	console.log('🌠 Gulp RS');
 };

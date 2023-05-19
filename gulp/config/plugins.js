@@ -1,15 +1,15 @@
-import replace from "gulp-replace";
-import plumber from "gulp-plumber";
-import notify from "gulp-notify";
-import browsersync from "browser-sync";
-import newer from "gulp-newer";
-import ifPlugin from "gulp-if";
+import browsersync from 'browser-sync';
+import ifPlugin from 'gulp-if';
+import newer from 'gulp-newer';
+import notify from 'gulp-notify';
+import plumber from 'gulp-plumber';
+import replace from 'gulp-replace';
 
 export const plugins = {
-	replace: replace,
-	plumber: plumber,
-	notify: notify,
-	browsersync: browsersync,
-	newer: newer,
+	replace,
+	plumber,
+	notify,
+	browsersync,
+	newer,
 	if: ifPlugin,
 };

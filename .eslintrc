@@ -1,11 +1,28 @@
 {
 	"extends": "airbnb-base",
 	"env": {
-		"browser": true,
+		"node": true,
 		"jquery": true,
-		"node": true
+		"browser": true
 	},
 	"rules": {
+		"no-console": 0,
+		"indent": "off",
+		"no-tabs": "off",
+		"no-undef": "off",
+		"arrow-parens": "off",
+		"spaced-comment": "off",
+		"no-unused-vars": "off",
+		"import/extensions": "off",
+		"no-param-reassign": "off",
+		"no-trailing-spaces": "off",
+		"no-restricted-syntax": "off",
+		"object-curly-newline": "off",
+		"implicit-arrow-linebreak": "off",
+		"import/prefer-default-export": "off",
+		"no-multiple-empty-lines": "warn",
+		"no-var": "error",
+		"linebreak-style": ["error", "windows"],
 		"prefer-const": [
 			"error",
 			{
@@ -13,18 +30,8 @@
 				"ignoreReadBeforeAssign": false
 			}
 		],
-		"linebreak-style": ["error", "windows"],
-		"no-var": "error",
 		"quotes": [2, "single", { "avoidEscape": true }],
-		"indent": "off",
-		"no-console": 0,
-		"no-use-before-define": ["error", { "functions": true, "classes": true, "variables": true }],
 		"no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
-		"no-unused-vars": "off",
-		"import/prefer-default-export": "off",
-		"import/extensions": "off",
-		"spaced-comment": "off",
-		"no-tabs": "off",
-		"object-curly-newline": "off"
+		"no-use-before-define": ["error", { "functions": true, "classes": true, "variables": true }]
 	}
 }
