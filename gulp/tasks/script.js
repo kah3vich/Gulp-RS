@@ -6,7 +6,7 @@ import webpackConfig from '../../webpack.config.js';
 webpackConfig.mode = 'development';
 webpackConfig.devtool = 'source-map';
 
-export const js = () =>
+export const script = () =>
 	gulp
 		.src(app.path.src.js)
 		.pipe(
