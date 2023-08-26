@@ -1,0 +1,10 @@
+.accordion-content {
+	display: grid;
+	grid-template-rows: 0fr;
+	overflow: hidden;
+	transition: grid-template-rows 200ms ease;
+}
+
+.accordion-content.open {
+	grid-template-rows: 1fr;
+}

@@ -1,9 +1,0 @@
-{
-	"compilerOptions": {
-		"baseUrl": ".",
-		"target": "es6",
-		"module": "es2015",
-		"experimentalDecorators": true
-	},
-	"include": ["src/**/*"]
-}
