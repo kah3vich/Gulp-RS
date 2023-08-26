@@ -191,3 +191,9 @@ yarn prettier:write
     ├── version.json - temporary assembly version, needed to avoid the cache
     └── webpack.config.js - configuration file for working with scripts in gulp
 ```
+
+<br />
+
+<img src="https://svg-readme.vercel.app/readme/svg?type=custom&content=🔧||LICENSE:&size=25&align=left" alt="script" width="100%" height="30" />
+
+## [LICENSE](LICENSE)
