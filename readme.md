@@ -13,23 +13,17 @@
     <img src="https://svg-readme.vercel.app/readme/svg?type=subtitle&content=One||of||the||current||and||actively||developing||assemblies||for||layout||Gulp.||With||support||for||current||package||versions||and||custom||plugin||improvements." alt="subtitle" width="100%" height="200" />
 </div>
 
-<img src="https://svg-readme.vercel.app/readme/svg?type=custom&content=⚠️||Warnings:&size=25&align=left" alt="warning" width="100%" height="30" />
+<img src="https://svg-readme.vercel.app/readme/svg?type=custom&content=🛠️||Install:&size=25&align=left" alt="script" width="100%" height="30" />
 
-- There is a refinement with linters for js and styles.
+### Install base packages:
 
-- Svg sprite have an internal plugin bug with non-correct display.
-
-- Work is underway to add the webp format with its convenient control in the code.
-
-- Work is underway on automatic work and imports in code.
+```bash
+npm i -g gulp gulp-cli webpack webpack-cli; yarn
+```
 
 <br />
-
-<div id="script" />
 
 <img src="https://svg-readme.vercel.app/readme/svg?type=custom&content=🚀||Scripts:&size=25&align=left" alt="script" width="100%" height="30" />
-
-<br />
 
 ### Install dependencies:
 
@@ -55,37 +49,25 @@ yarn build
 yarn build:zip
 ```
 
-### ESLint script check:
+### Component create:
+
+```bash
+yarn component:create [name] [path]
+```
+
+### Component remove:
+
+```bash
+yarn component:remove [name] [path]
+```
+
+### Check lint:
 
 ```bash
 yarn lint:script
 ```
 
-### ESLint script fix:
-
-```bash
-yarn lint:script-fix
-```
-
-### StyleLint style check:
-
-```bash
-yarn lint:styles
-```
-
-### StyleLint style fix:
-
-```bash
-yarn lint:styles-fix
-```
-
-### Prettier code check:
-
-```bash
-yarn prettier:check
-```
-
-### Prettier code fix:
+### Check prettier:
 
 ```bash
 yarn prettier:write
