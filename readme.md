@@ -13,8 +13,6 @@
 
 <img src="https://svg-readme.vercel.app/readme/svg?type=custom&content=🔥||Description:&size=25&align=left" alt="script" width="100%" height="30" />
 
-<br />
-
 One of the current and developing assemblies for Gulp. With support for current versions Gulp 4 and Webpack 5. The main idea of the assembly is to simplify and speed up the layout process. For this, a flow was implemented:
 
 1. Full generation custom components and font files.
@@ -43,7 +41,7 @@ git clone https://github.com/kah3vich/Gulp-RS.git -b [branch]
 >
 > ### font - various fonts for sharing.
 >
-> ### refs - examples and blanks.
+> ### [refs](https://kah3vich.github.io/Gulp-RS/index.html) - examples and blanks ( beta ).
 >
 > ### package - custom build package ( beta ).
 
