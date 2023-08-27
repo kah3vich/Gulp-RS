@@ -59,6 +59,8 @@ npm i -g gulp gulp-cli webpack webpack-cli; yarn
 
 <img src="https://svg-readme.vercel.app/readme/svg?type=custom&content=🚀||Scripts:&size=25&align=left" alt="script" width="100%" height="30" />
 
+<div id="script"></div>
+
 ### Install dependencies:
 
 ```bash
