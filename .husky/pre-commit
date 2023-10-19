@@ -3,4 +3,4 @@
 
 # yarn lint-staged
 
-yarn build
+# yarn build
